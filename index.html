@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- favicon -->
+        <link href="images/favicon.ico" rel="shortcut icon">
+        <title>St. Anthony's School | Doranda, Ranchi</title>
+
+        <!-- CSS Stylesheets -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/colms.css" rel="stylesheet">
+        <link href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- add Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Quicksand:400,700|Rokkitt:400,700" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <header>
+
+        </header>
+
+        <div class="page-load-screen">
+            <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
+            <img src="images/landing-page-blurred.jpg" alt="blurred image of the school" class="img-responsive blurred-school-pic">
+            <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
+
+        </div>
+
+        <section class="page-one">
+
+            <!-- hamburgler js-->
+            <div class="mobilenav">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>Admissions</a></li>
+                    <li><a>Campus Life</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <a href="javascript:void(0)" class="icon animated slideInDown">
+                <div class="hamburger"></div>
+                <div class="menui top-menu"></div>
+                <div class="menui mid-menu"></div>
+                <div class="menui bottom-menu"></div>
+
+            </a>
+
+            <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
+            <img src="images/Capture2.PNG" alt="school pic" class="img-responsive mySlides">
+            <img src="images/Capture.PNG" alt="school pic" class="img-responsive mySlides">
+            <img src="images/Capture3.PNG" alt="school pic" class="img-responsive mySlides">
+            <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
+            <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow-page-one animated
+            slideInDown">
+
+        </section>
+
+
+        <footer>
+
+        </footer>
+
+
+        <!-- Javascript files -->
+        <script src="js/jquery-3.0.0.min.js"></script>
+        <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+
+            function togglescroll() {
+                $('body').on('touchstart', function(e) {
+                    if ($('body').hasClass('noscroll')) {
+                        e.preventDefault();
+                    }
+                });
+            }
+
+            myIndex = 0;
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 4000); // Change image every 2 seconds
+            }
+
+            $(document).ready(function(){
+
+                togglescroll();
+                $(".icon").click(function() {
+                    $(".mobilenav").fadeToggle(500);
+                    $(".top-menu").toggleClass("top-animate");
+                    $("body").toggleClass("noscroll");
+                    $(".mid-menu").toggleClass("mid-animate");
+                    $(".bottom-menu").toggleClass("bottom-animate");
+                });
+
+                $(document).keydown(function(e) {            //code for hamburgler
+                    if (e.keyCode == 27) {
+                        $(".mobilenav").fadeOut(500);
+                        $(".top-menu").removeClass("top-animate");
+                        $("body").removeClass("noscroll");
+                        $(".mid-menu").removeClass("mid-animate");
+                        $(".bottom-menu").removeClass("bottom-animate");
+                    }
+                });
+
+                //animation end string
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+                //animation on landing page
+                $(".school-logo").fadeIn(1000);
+                $(".blurred-school-pic").delay(500).fadeIn(2000);
+                $(".down-arrow").delay(1000).fadeIn().one(animationEnd, function(){
+                    $(".down-arrow").removeClass("slideInDown").addClass("pulse infinite");
+                });
+
+                //animation on clicking down arrow
+                $(".down-arrow").click(function() {
+                    $(".school-logo").fadeOut(200);
+                    $(".page-load-screen").slideUp(1000,"easeInOutBack",function(){
+                        $(".page-one-pic").fadeIn(500);
+                        $(".school-name").delay(500).fadeIn(500);
+                        $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
+                            $(".down-arrow-page-one").removeClass("slideInDown").addClass("pulse infinite");
+                        });
+                        $(".icon").delay(500).fadeIn();
+                        carousel();
+                    });
+                });
+
+            });
+        </script>
+
+    </body>
+</html>
