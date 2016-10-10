@@ -17,10 +17,6 @@
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-        <!-- add Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Quicksand:400,700|Rokkitt:400,700" rel="stylesheet">
-
-
     </head>
     <body>
         <header>
@@ -58,7 +54,14 @@
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
+        <script async src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.26/webfontloader.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Josefin Sans:400,700','Quicksand:400,700','Rokkitt:400,700']
+                }
+            });
+        </script>
         <script>
             var imgs = $(".slideshow > img");
 
