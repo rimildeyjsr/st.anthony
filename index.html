@@ -85,12 +85,17 @@
                 });
             }
 
+            var imgs = $(".slideshow > img");
 
             function carousel() {
-                $(".slideshow > img").each(function(index,element){
-                    $(element).fadeIn(1000).delay(2000);
-                    setTimeout(carousel,1000);
+                imgs.each(function(index,element){
+                    // Don't make the first one (index = 0) wait at all;
+                    // make the second (index = 1) wait 3 seconds, the third
+                    // (index = 2) wait 6 seconds, etc. And then fade in
+                    $(element).delay(index * 3000).fadeIn(1000);
                 });
+                // Start the entire process again two seconds after the last image fades in
+                setTimeout(carousel,imgs.length*3000);
             }
 
             $(document).ready(function(){
