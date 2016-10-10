@@ -36,22 +36,6 @@
 
         <section class="page-one">
 
-            <!-- hamburgler js-->
-            <div class="mobilenav">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Admissions</a></li>
-                    <li><a>Campus Life</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-            </div>
-            <a href="javascript:void(0)" class="icon animated slideInDown">
-                <div class="hamburger"></div>
-                <div class="menui top-menu"></div>
-                <div class="menui mid-menu"></div>
-                <div class="menui bottom-menu"></div>
-
-            </a>
             <div class="slideshow">
                 <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
                 <img src="images/Capture2.jpg" alt="school pic" class="img-responsive mySlides">
@@ -76,15 +60,6 @@
         <script src="js/bootstrap.min.js"></script>
 
         <script>
-
-            function togglescroll() {
-                $('body').on('touchstart', function(e) {
-                    if ($('body').hasClass('noscroll')) {
-                        e.preventDefault();
-                    }
-                });
-            }
-
             var imgs = $(".slideshow > img");
 
             function carousel() {
@@ -106,26 +81,6 @@
             }
 
             $(document).ready(function(){
-
-                togglescroll();
-                $(".icon").click(function() {
-                    $(".mobilenav").fadeToggle(500);
-                    $(".top-menu").toggleClass("top-animate");
-                    $("body").toggleClass("noscroll");
-                    $(".mid-menu").toggleClass("mid-animate");
-                    $(".bottom-menu").toggleClass("bottom-animate");
-                });
-
-                $(document).keydown(function(e) {            //code for hamburgler
-                    if (e.keyCode == 27) {
-                        $(".mobilenav").fadeOut(500);
-                        $(".top-menu").removeClass("top-animate");
-                        $("body").removeClass("noscroll");
-                        $(".mid-menu").removeClass("mid-animate");
-                        $(".bottom-menu").removeClass("bottom-animate");
-                    }
-                });
-
                 //animation end string
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
@@ -146,7 +101,6 @@
                             $(".down-arrow-page-one").removeClass("slideInDown").addClass("pulse infinite");
                             carousel();
                         });
-                        $(".icon").delay(500).fadeIn();
 
                     });
                 });
