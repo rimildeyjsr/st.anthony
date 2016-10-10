@@ -52,11 +52,12 @@
                 <div class="menui bottom-menu"></div>
 
             </a>
-
-            <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
-            <img src="images/Capture2.PNG" alt="school pic" class="img-responsive mySlides">
-            <img src="images/Capture.PNG" alt="school pic" class="img-responsive mySlides">
-            <img src="images/Capture3.PNG" alt="school pic" class="img-responsive mySlides">
+            <div class="slideshow">
+                <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
+                <img src="images/Capture2.PNG" alt="school pic" class="img-responsive mySlides">
+                <img src="images/Capture.PNG" alt="school pic" class="img-responsive mySlides">
+                <img src="images/Capture3.PNG" alt="school pic" class="img-responsive mySlides">
+            </div>
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
             <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow-page-one animated
             slideInDown">
@@ -84,17 +85,12 @@
                 });
             }
 
-            myIndex = 0;
+
             function carousel() {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) {myIndex = 1}
-                x[myIndex-1].style.display = "block";
-                setTimeout(carousel, 4000); // Change image every 2 seconds
+                $(".slideshow > img").each(function(index,element){
+                    $(element).fadeIn(1000).delay(2000);
+                    setTimeout(carousel,1000);
+                });
             }
 
             $(document).ready(function(){
@@ -136,9 +132,10 @@
                         $(".school-name").delay(500).fadeIn(500);
                         $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
                             $(".down-arrow-page-one").removeClass("slideInDown").addClass("pulse infinite");
+                            carousel();
                         });
                         $(".icon").delay(500).fadeIn();
-                        carousel();
+
                     });
                 });
 
