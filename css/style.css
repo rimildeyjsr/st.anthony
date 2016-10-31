@@ -1,3 +1,8 @@
+html,body {
+    overflow-y: hidden;
+}
+
+
 .pageloadscreen {
     position: relative;
     left: 0;
