@@ -19,9 +19,6 @@
 
     </head>
     <body>
-        <header>
-
-        </header>
 
         <div class="page-load-screen">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
@@ -44,12 +41,6 @@
 
         </section>
 
-
-        <footer>
-
-        </footer>
-
-
         <!-- Javascript files -->
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
@@ -64,22 +55,32 @@
         </script>
         <script>
 
-            $next = 1;			// fixed, please do not modfy;
-            $current = 0;		// fixed, please do not modfy;
-            $interval = 4000;	// You can set single picture show time;
-            $fadeTime = 800;	// You can set fadeing-transition time;
-            $imgNum = 4;		// How many pictures do you have
+            $next = 1;
+            $current = 0;
+            $interval = 3000;
+            $fadeTime = 1000;
+            $imgNum = 4;
 
             function carousel (){
-                //make image fade in and fade out at one time, without splash vsual;
+                //make image fade in and fade out at one time, without splash visual;
                 $('.slideshow img').eq($current).delay($interval).fadeOut($fadeTime)
                         .end().eq($next).delay($interval).hide().fadeIn($fadeTime, carousel);
 
-                // if You have 5 images, then (eq) range is 0~4
-                // so we should reset to 0 when value > 4;
-                if($next < $imgNum-1){ $next++; } else { $next = 0;}
-                if($current < $imgNum-1){ $current++; } else { $current =0; }
+
+                if($next < $imgNum-1){
+                    $next++;
+                }
+                else {
+                    $next = 0;
+                }
+                if($current < $imgNum-1){
+                    $current++;
+                }
+                else {
+                    $current =0;
+                }
             }
+
             $(document).ready(function(){
                 //animation end string
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
