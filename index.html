@@ -88,9 +88,7 @@
                 //animation on landing page
                 $(".school-logo").fadeIn(1000);
                 $(".blurred-school-pic").delay(500).fadeIn(2000);
-                $(".down-arrow").delay(1000).fadeIn().one(animationEnd, function(){
-                    $(".down-arrow").removeClass("slideInDown").addClass("pulse infinite");
-                });
+                $(".down-arrow").delay(1000).fadeIn();
 
                 //animation on clicking down arrow
                 $(".down-arrow").click(function() {
@@ -99,7 +97,6 @@
                         $(".page-one-pic").fadeIn(500);
                         $(".school-name").delay(500).fadeIn(500);
                         $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
-                            $(".down-arrow-page-one").removeClass("slideInDown").addClass("pulse infinite");
                             carousel();
                         });
 
