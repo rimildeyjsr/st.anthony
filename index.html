@@ -63,23 +63,23 @@
             });
         </script>
         <script>
-            var imgs = $(".slideshow > img");
 
-            function carousel() {
-                imgs.hide();
-                imgs.each(function(index,element){
-                    // Don't make the first one (index = 0) wait at all;
-                    // make the second (index = 1) wait 3 seconds, the third
-                    // (index = 2) wait 6 seconds, etc. And then fade in
-                    
-                      $(element).delay(index * 3000).fadeIn(1000);
+            $next = 1;			// fixed, please do not modfy;
+            $current = 0;		// fixed, please do not modfy;
+            $interval = 4000;	// You can set single picture show time;
+            $fadeTime = 800;	// You can set fadeing-transition time;
+            $imgNum = 4;		// How many pictures do you have
 
+            function carousel (){
+                //make image fade in and fade out at one time, without splash vsual;
+                $('.slideshow img').eq($current).delay($interval).fadeOut($fadeTime)
+                        .end().eq($next).delay($interval).hide().fadeIn($fadeTime, carousel);
 
-                });
-                // Start the entire process again two seconds after the last image fades in
-                setTimeout(carousel,imgs.length*3000);
+                // if You have 5 images, then (eq) range is 0~4
+                // so we should reset to 0 when value > 4;
+                if($next < $imgNum-1){ $next++; } else { $next = 0;}
+                if($current < $imgNum-1){ $current++; } else { $current =0; }
             }
-
             $(document).ready(function(){
                 //animation end string
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
