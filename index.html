@@ -71,12 +71,9 @@
                     // Don't make the first one (index = 0) wait at all;
                     // make the second (index = 1) wait 3 seconds, the third
                     // (index = 2) wait 6 seconds, etc. And then fade in
-                    if(index === 0){
-                      $(element).show();
-                    }
-                    else {  
+                    
                       $(element).delay(index * 3000).fadeIn(1000);
-                    }
+
 
                 });
                 // Start the entire process again two seconds after the last image fades in
