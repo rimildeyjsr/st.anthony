@@ -98,6 +98,8 @@ html,body {
     height: auto;
 }
 
+
+
 /* media queries */
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     .blurred-school-pic .page-one-pic .mySlides {
