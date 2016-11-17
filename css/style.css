@@ -46,9 +46,34 @@ html,body {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 80%;
+    top: 81.5%;
     z-index: 5;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
 }
+
+.ring {
+    border: 2.5px solid white;
+    -webkit-border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left:0;
+    right: 0;
+    top:81%;
+    z-index: 5;
+    margin: 0 auto;
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 2s;
+    opacity: 0.0;
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0,0); opacity: 1;}
+    100% {-webkit-transform: scale(1.2,1.2); opacity: 0;}
+}
+
 
 .page-one-pic {
     display: none;
@@ -62,6 +87,7 @@ html,body {
     width: 100%;
     height: auto;
 }
+
 
 .school-name {
     display: none;
