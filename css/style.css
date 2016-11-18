@@ -47,7 +47,7 @@ html,body {
     right: 0;
     margin: 0 auto;
     top: 81.5%;
-    z-index: 5;
+    z-index: 15;
     border-radius: 50%;
     height: 80px;
     width: 80px;
@@ -147,12 +147,22 @@ html,body {
         height: 220px;
         top: 25%;
     }
+
+    .down-arrow{
+        height: 60px;
+        width: 60px;
+    }
 }
     @media screen and (min-width: 480px) {
         /* smartphones, Android phones, landscape iPhone */
         .school-logo{
             height: 250px;
             top: 20%;
+        }
+
+        .down-arrow{
+            height: 60px;
+            width: 60px;
         }
 
     }
@@ -162,12 +172,22 @@ html,body {
             height: 280px;
             top:18%;
         }
+
+        .down-arrow{
+            height: 70px;
+            width: 70px;
+        }
     }
     @media screen and (min-width: 755px) {
         /*random breakpoint based on design*/
         .school-logo{
             height: 300px;
             top: 12%;
+        }
+
+        .down-arrow{
+            height: 70px;
+            width: 70px;
         }
 
     }
@@ -178,6 +198,11 @@ html,body {
             top: 10%;
         }
 
+        .down-arrow{
+            height: 80px;
+            width: 80px;
+        }
+
     }
 
 
@@ -185,6 +210,11 @@ html,body {
         .school-logo{
             height: 315px;
             top: 10%;
+        }
+
+        .down-arrow{
+            height: 80px;
+            width: 80px;
         }
     }
     @media screen and (min-width: 1025px) {
@@ -194,12 +224,22 @@ html,body {
             top: 10%;
         }
 
+        .down-arrow{
+            height: 80px;
+            width: 80px;
+        }
+
     }
     @media screen and (min-width: 1281px) {
         /* hi-res laptops and desktops */
         .school-logo{
             height: 350px;
             top: 10%;
+        }
+
+        .down-arrow{
+            height: 80px;
+            width: 80px;
         }
 
     }
