@@ -29,7 +29,6 @@ html,body {
 
 .school-logo {
     display: none;
-    height: 350px;
     width: auto;
     position: absolute;
     left: 0;
@@ -141,6 +140,7 @@ html,body {
 
 /*responsive layout*/
 
+
 @media screen and (min-width:320px) {
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
     .school-logo {
@@ -151,6 +151,7 @@ html,body {
     .down-arrow{
         height: 60px;
         width: 60px;
+        top: 82.5%;
     }
 }
     @media screen and (min-width: 480px) {
@@ -163,6 +164,7 @@ html,body {
         .down-arrow{
             height: 60px;
             width: 60px;
+            top: 82.5%;
         }
 
     }
@@ -176,6 +178,7 @@ html,body {
         .down-arrow{
             height: 70px;
             width: 70px;
+            top: 81.5%;
         }
     }
     @media screen and (min-width: 755px) {
@@ -188,6 +191,7 @@ html,body {
         .down-arrow{
             height: 70px;
             width: 70px;
+            top: 81.5%;
         }
 
     }
@@ -201,12 +205,14 @@ html,body {
         .down-arrow{
             height: 80px;
             width: 80px;
+            top: 81.5%;
         }
 
     }
 
 
     @media screen and (min-width: 920px){
+        /*random breakpoint based on design*/
         .school-logo{
             height: 315px;
             top: 10%;
@@ -215,6 +221,7 @@ html,body {
         .down-arrow{
             height: 80px;
             width: 80px;
+            top: 81.5%;
         }
     }
     @media screen and (min-width: 1025px) {
@@ -227,6 +234,7 @@ html,body {
         .down-arrow{
             height: 80px;
             width: 80px;
+            top: 81.5%;
         }
 
     }
@@ -240,6 +248,7 @@ html,body {
         .down-arrow{
             height: 80px;
             width: 80px;
+            top: 81.5%;
         }
 
     }
