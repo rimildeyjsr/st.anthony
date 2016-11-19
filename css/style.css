@@ -111,8 +111,10 @@ html,body {
     left: 0;
     right: 0;
     margin: 0 auto;
-    top: 80%;
-    z-index: 5;
+    top: 81.5%;
+    z-index: 15;
+    width: 80px;
+    height: 80px;
 }
 
 .mySlides {
@@ -148,7 +150,7 @@ html,body {
         top: 25%;
     }
 
-    .down-arrow{
+    .down-arrow .down-arrow-page-one{
         height: 60px;
         width: 60px;
         top: 82.5%;
@@ -161,7 +163,7 @@ html,body {
             top: 20%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 60px;
             width: 60px;
             top: 82.5%;
@@ -175,7 +177,7 @@ html,body {
             top:18%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 70px;
             width: 70px;
             top: 81.5%;
@@ -188,7 +190,7 @@ html,body {
             top: 12%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 70px;
             width: 70px;
             top: 81.5%;
@@ -202,7 +204,7 @@ html,body {
             top: 10%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 80px;
             width: 80px;
             top: 81.5%;
@@ -218,7 +220,7 @@ html,body {
             top: 10%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 80px;
             width: 80px;
             top: 81.5%;
@@ -231,7 +233,7 @@ html,body {
             top: 10%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 80px;
             width: 80px;
             top: 81.5%;
@@ -245,7 +247,7 @@ html,body {
             top: 10%;
         }
 
-        .down-arrow{
+        .down-arrow .down-arrow-page-one{
             height: 80px;
             width: 80px;
             top: 81.5%;
