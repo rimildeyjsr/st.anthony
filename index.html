@@ -42,10 +42,6 @@
             <div class="ring"></div>
             <div class="ring ring2"></div>
 
-
-
-
-
         </section>
 
         <!-- Javascript files -->
@@ -100,14 +96,14 @@
                 //animation on clicking down arrow
                 $(".down-arrow").click(function() {
                     $(".school-logo").fadeOut(200);
-                    $(".page-load-screen").slideUp(1000,"easeInOutBack",function(){
-                        $(".page-one-pic").fadeIn(500);
-                        $(".school-name").delay(500).fadeIn(500);
-                        $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
+                    $(".page-load-screen").slideUp(1000,"easeInOutBack");
+                        $(".page-one-pic").delay(400).fadeIn(1000);
+                        $(".school-name").delay(1500).fadeIn(500);
+                        $(".down-arrow-page-one").delay(3500).fadeIn().one(animationEnd, function(){
                             carousel();
                         });
 
-                    });
+                    //});
                 });
 
             });
