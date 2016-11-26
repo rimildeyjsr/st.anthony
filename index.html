@@ -19,15 +19,17 @@
     </head>
     <body>
     <div id="fullpage">
-        <div class="page-load-screen section">
+        <div class="page-load-screen section active" id="section0">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
             <img src="images/landing-page-blurred.jpg" alt="blurred image of the school" class="img-responsive blurred-school-pic">
-            <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
+            <a href="#Page2">
+                <img data-anchor="Page2" src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
+            </a>
             <div class="ring"></div>
             <div class="ring ring2"></div>
         </div>
 
-        <div class="page-one section">
+        <div class="page-one section" id="section1">
 
             <div class="slideshow">
                 <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
@@ -35,6 +37,7 @@
                 <img src="images/Capture.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture3.jpg" alt="school pic" class="img-responsive mySlides">
             </div>
+
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
             <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow-page-one animated
             slideInDown">
@@ -85,7 +88,9 @@
 
             $(document).ready(function(){
 
-                $('#fullpage').fullpage();
+                $('#fullpage').fullpage({
+                    anchors:['Page1','Page2','lastpage']
+                });
                 //animation end string
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
@@ -95,7 +100,7 @@
                 $(".down-arrow").delay(1000).fadeIn();
 
                 //animation on clicking down arrow
-                $(".down-arrow").click(function() {
+               /* $(".down-arrow").click(function() {
                     $(".school-logo").fadeOut(200);
                     $(".page-load-screen").slideUp(1000);
                         $(".page-one-pic").delay(500).slideDown(100);
@@ -104,7 +109,7 @@
                             carousel();
                         });
                    // });
-                });
+                });*/
 
             });
         </script>
