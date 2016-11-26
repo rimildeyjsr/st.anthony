@@ -11,8 +11,6 @@
 
         <!-- CSS Stylesheets -->
         <link href="css/normalize.css" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/colms.css" rel="stylesheet">
         <link href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -47,7 +45,6 @@
         <!-- Javascript files -->
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.26/webfontloader.js"></script>
         <script>
             WebFont.load({
@@ -96,7 +93,7 @@
                 //animation on clicking down arrow
                 $(".down-arrow").click(function() {
                     $(".school-logo").fadeOut(200);
-                    $(".page-load-screen").slideUp(1000,"easeInOutBack",function(){
+                    $(".page-load-screen").fadeOut(1000,"easeInOutBack",function(){
                         $(".page-one-pic").fadeIn(500);
                         $(".school-name").delay(500).fadeIn(500);
                         $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
