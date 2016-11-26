@@ -13,12 +13,13 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
+        <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
     </head>
     <body>
-
-        <div class="page-load-screen">
+    <div id="fullpage">
+        <div class="page-load-screen section">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
             <img src="images/landing-page-blurred.jpg" alt="blurred image of the school" class="img-responsive blurred-school-pic">
             <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
@@ -26,7 +27,7 @@
             <div class="ring ring2"></div>
         </div>
 
-        <section class="page-one">
+        <div class="page-one section">
 
             <div class="slideshow">
                 <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
@@ -39,12 +40,13 @@
             slideInDown">
             <div class="ring"></div>
             <div class="ring ring2"></div>
-
-        </section>
+        </div>
+    </div>
 
         <!-- Javascript files -->
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
+        <script src="js/jquery.fullPage.min.js"></script>
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.26/webfontloader.js"></script>
         <script>
             WebFont.load({
@@ -82,6 +84,8 @@
             }
 
             $(document).ready(function(){
+
+                $('#fullpage').fullpage();
                 //animation end string
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
@@ -93,13 +97,13 @@
                 //animation on clicking down arrow
                 $(".down-arrow").click(function() {
                     $(".school-logo").fadeOut(200);
-                    $(".page-load-screen").fadeOut(1000,"easeInOutBack",function(){
-                        $(".page-one-pic").fadeIn(500);
+                    $(".page-load-screen").slideUp(1000);
+                        $(".page-one-pic").delay(500).slideDown(100);
                         $(".school-name").delay(500).fadeIn(500);
                         $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
                             carousel();
                         });
-                    });
+                   // });
                 });
 
             });
