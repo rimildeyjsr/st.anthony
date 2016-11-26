@@ -31,12 +31,13 @@
 
         <div class="page-one section" id="section1">
 
-            <div class="slideshow">
-                <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic mySlides">
+            <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic">
+            <!--<div class="slideshow">
+
                 <img src="images/Capture2.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture3.jpg" alt="school pic" class="img-responsive mySlides">
-            </div>
+            </div>-->
 
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
             <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow-page-one animated
@@ -100,9 +101,8 @@
                 $(".down-arrow").delay(1000).fadeIn();
 
                 //animation on clicking down arrow
-               /* $(".down-arrow").click(function() {
-                    $(".school-logo").fadeOut(200);
-                    $(".page-load-screen").slideUp(1000);
+
+               /*
                         $(".page-one-pic").delay(500).slideDown(100);
                         $(".school-name").delay(500).fadeIn(500);
                         $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
