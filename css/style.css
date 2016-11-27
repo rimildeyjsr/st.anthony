@@ -136,9 +136,9 @@ html,body {
     top: 25%;
     z-index: 5;
     margin: 0 auto;
-    -webkit-transform: translate3d(0,10px,0);
+    /*-webkit-transform: translate3d(0,-30px,0);
     -webkit-transition: all 0.7s ease-out;
-    -webkit-transition-delay: 1s;
+    -webkit-transition-delay: 5s;*/
 }
 
 .down-arrow-page-one {
