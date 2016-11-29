@@ -10,6 +10,7 @@ html,body {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
 .pageloadscreen {
     position: relative;
     left: 0;
@@ -58,11 +59,13 @@ html,body {
 
 .ring {
     border: 2.5px solid white;
+
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+
     height: 80px;
     width: 80px;
     position: absolute;
@@ -71,21 +74,27 @@ html,body {
     top:81%;
     z-index: 5;
     margin: 0 auto;
+
     -webkit-animation: pulsate 2s ease-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-delay: 2s;
+
     -moz-animation: pulsate 2s ease-out;
     -moz-animation-iteration-count: infinite;
     -moz-animation-delay: 2s;
+
     -o-animation: pulsate 2s ease-out;
     -o-animation-iteration-count: infinite;
     -o-animation-delay: 2s;
+
     -ms-animation: pulsate 2s ease-out;
     -ms-animation-iteration-count: infinite;
     -ms-animation-delay: 2s;
+
     animation: pulsate 2s ease-out;
     animation-iteration-count: infinite;
     animation-delay: 2s;
+
     opacity: 0.0;
 }
 
@@ -244,7 +253,60 @@ html,body {
     z-index: 25;
     width: 80px;
     height: 80px;
+    opacity: 0;
 }
+
+.come-down {
+    -ms-transform:translateY(-85px);
+    -moz-transform:translateY(-85px);
+    -o-transform:translateY(-85px);
+    -webkit-transform:translateY(-85px);
+    transform:translateY(-85px);
+
+    -webkit-animation:come-down 1.2s ease-out forwards;
+    -ms-animation:come-down 1.2s ease-out forwards;
+    -o-animation:come-down 1.2s ease-out forwards;
+    -moz-animation:come-down 1.2s ease-out forwards;
+    animation:come-down 1.2s ease-out forwards;
+
+    opacity: 1;
+}
+
+@-webkit-keyframes come-down {
+    to {
+        -webkit-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+@-o-keyframes come-down {
+    to {
+        -o-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+@-moz-keyframes come-down {
+    to {
+        -moz-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+@-ms-keyframes come-down {
+    to {
+        -ms-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+
+@keyframes come-down {
+    to{
+        transform:translateY(0)
+    }
+}
+
 
 .mySlides {
     display: none;

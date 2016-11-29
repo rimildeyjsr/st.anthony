@@ -119,6 +119,7 @@
                     afterLoad : function(anchorLink,index) {
                         if (index == 2 || anchorLink == 'Page2'){
                             $('.school-name').addClass('come-in');
+                            $('.down-arrow-page-one').addClass('come-down');
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
