@@ -99,14 +99,33 @@
             $(window).on('load', function() {
                 window.location.hash = '#Page1';
             });
-            
+
             $(document).ready(function(){
+
                 $('#fullpage #section1').show();
+
                 $('#fullpage').fullpage({
+
                     anchors:['Page1','Page2','lastpage'],
+
+                    /*onLeave : function(index,nextIndex,direction){
+                        if (index == 2 && direction == 'down' && nextIndex == 3){
+                            console.log('yes');
+                            $.fn.fullpage.setAllowScrolling(true,'all');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'all');
+                        }
+                    },*/
+
                     afterLoad : function(anchorLink,index) {
                         if (index == 2 || anchorLink == 'Page2'){
                             $('.school-name').addClass('animated slideInUp').css('visibility','visible');
+                            $.fn.fullpage.setAllowScrolling(false,'up');
+                            $.fn.fullpage.setKeyboardScrolling(false, 'up');
+                        }
+
+                        if(index == 3 || anchorLink == 'lastpage'){
+                            $.fn.fullpage.setAllowScrolling(true,'up');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                     }
 
