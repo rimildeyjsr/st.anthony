@@ -99,6 +99,11 @@
                 $('#fullpage #section1').show();
                 $('#fullpage').fullpage({
                     anchors:['Page1','Page2','lastpage'],
+                    afterLoad : function(anchorLink,index) {
+                        if (index == 2 || anchorLink == 'Page2'){
+                            $('.school-name').addClass('animated slideInUp').css('visibility','visible');
+                        }
+                    }
 
                 });
                 //animation end string
