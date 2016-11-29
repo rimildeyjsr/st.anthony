@@ -30,14 +30,14 @@
         </div>
 
         <div class="page-one section" id="section1">
-
             <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic">
-            <!--<div class="slideshow">
 
+            <div class="slideshow">
+                <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive mySlides">
                 <img src="images/Capture2.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture3.jpg" alt="school pic" class="img-responsive mySlides">
-            </div>-->
+            </div>
 
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
             <a href="#lastpage">
@@ -123,6 +123,7 @@
                             $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
                                 $('.add_ring').addClass('ring');
                                 $('.add_ring2').addClass('ring ring2');
+                                carousel();
                             });
 
                             $.fn.fullpage.setAllowScrolling(false,'up');

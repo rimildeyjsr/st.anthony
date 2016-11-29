@@ -94,11 +94,11 @@ html,body {
 }
 
 .ring2 {
-    -webkit-animation-delay: 1.4s;
-    -moz-animation-delay: 1.4s;
-    -o-animation-delay: 1.4s;
-    -ms-animation-delay: 1.4s;
-    animation-delay: 1.4s;
+    -webkit-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2;
+    -o-animation-delay: 1.2s;
+    -ms-animation-delay: 1.2s;
+    animation-delay: 1.2s;
 }
 
 @-webkit-keyframes pulsate {
@@ -304,7 +304,7 @@ html,body {
 
 .mySlides {
     display: none;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
