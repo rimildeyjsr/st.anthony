@@ -77,23 +77,18 @@ html,body {
 
     -webkit-animation: pulsate 2s ease-out;
     -webkit-animation-iteration-count: infinite;
-    -webkit-animation-delay: 2s;
 
     -moz-animation: pulsate 2s ease-out;
     -moz-animation-iteration-count: infinite;
-    -moz-animation-delay: 2s;
 
     -o-animation: pulsate 2s ease-out;
     -o-animation-iteration-count: infinite;
-    -o-animation-delay: 2s;
 
     -ms-animation: pulsate 2s ease-out;
     -ms-animation-iteration-count: infinite;
-    -ms-animation-delay: 2s;
 
     animation: pulsate 2s ease-out;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
 
     opacity: 0.0;
 }

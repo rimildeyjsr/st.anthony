@@ -25,8 +25,8 @@
             <a href="#Page2">
                 <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
             </a>
-            <div class="ring"></div>
-            <div class="ring ring2"></div>
+            <div class="ring_add"></div>
+            <div class="ring_add2"></div>
         </div>
 
         <div class="page-one section" id="section1">
@@ -117,7 +117,7 @@
                     },*/
 
                     afterLoad : function(anchorLink,index) {
-                        
+
                         if (index == 2 || anchorLink == 'Page2'){
                             $('.school-name').addClass('come-in');
                             $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
@@ -142,7 +142,10 @@
                 //animation on landing page
                 $(".school-logo").fadeIn(1000);
                 $(".blurred-school-pic").delay(500).fadeIn(2000);
-                $(".down-arrow").delay(1000).fadeIn();
+                $(".down-arrow").delay(1000).fadeIn().one(animationEnd,function(){
+                    $('.ring_add').addClass('ring');
+                    $('.ring_add2').addClass('ring ring2');
+                });
 
                 //animation on clicking down arrow
 
