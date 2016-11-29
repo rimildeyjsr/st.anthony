@@ -190,11 +190,13 @@ html,body {
     -o-transform:translateY(85px);
     -webkit-transform:translateY(85px);
     transform:translateY(85px);
-    -webkit-animation:come-in 1.2s ease-in forwards;
-    -ms-animation:come-in 1.2s ease-in forwards;
-    -o-animation:come-in 1.2s ease-in forwards;
-    -moz-animation:come-in 1.2s ease-in forwards;
-    animation:come-in 1.2s ease-in forwards;
+
+    -webkit-animation:come-in 1.2s ease-out forwards;
+    -ms-animation:come-in 1.2s ease-out forwards;
+    -o-animation:come-in 1.2s ease-out forwards;
+    -moz-animation:come-in 1.2s ease-out forwards;
+    animation:come-in 1.2s ease-out forwards;
+
     opacity: 1;
 }
 
