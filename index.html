@@ -44,8 +44,8 @@
                 <img data-anchor="Page3" src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow-page-one animated
             slideInDown">
             </a>
-            <div class="ring"></div>
-            <div class="ring ring2"></div>
+            <div class="add_ring"></div>
+            <div class="add_ring2"></div>
         </div>
 
         <div class="section">
@@ -101,7 +101,7 @@
             });
 
             $(document).ready(function(){
-
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
                 $('#fullpage #section1').show();
 
                 $('#fullpage').fullpage({
@@ -117,9 +117,14 @@
                     },*/
 
                     afterLoad : function(anchorLink,index) {
+                        
                         if (index == 2 || anchorLink == 'Page2'){
                             $('.school-name').addClass('come-in');
-                            $('.down-arrow-page-one').addClass('come-down');
+                            $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
+                                $('.add_ring').addClass('ring');
+                                $('.add_ring2').addClass('ring ring2');
+                            });
+
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
@@ -132,7 +137,7 @@
 
                 });
                 //animation end string
-                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
 
                 //animation on landing page
                 $(".school-logo").fadeIn(1000);
