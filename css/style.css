@@ -311,7 +311,6 @@ html,body {
 }
 
 #slideshow img {
-    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -319,13 +318,8 @@ html,body {
     /* to make pic responsive */
     min-height: 100%;
     min-width: 1024px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-
-    top:50%;
-    left:50%;
-    margin-left:-400px;
-    margin-top:-200px;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
     -webkit-transition-duration: 3s, 10s;

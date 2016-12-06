@@ -37,6 +37,7 @@
                 <img src="images/Capture2.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture3.jpg" alt="school pic" class="img-responsive mySlides">
+
             </div>
 
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
@@ -68,33 +69,25 @@
         </script>
         <script>
 
-            $next = 1;
-            $current = 0;
-            $interval = 3000;
-            $fadeTime = 1000;
-            $imgNum = 4;
+            function slideEffect(){
+                //console.log("here");
+                document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
+                window.setInterval(kenBurns, 6000);
+                var images = document.getElementById('slideshow').getElementsByTagName('img'),
+                        numberOfImages  = images.length,
+                        i= 1;
 
-            function carousel (){
-                //make image fade in and fade out at one time, without splash visual;
-                $('.slideshow img').eq($current).delay($interval).fadeOut($fadeTime)
-                        .end().eq($next).delay($interval).hide().fadeIn($fadeTime, carousel);
+                function kenBurns() {
+                    //console.log("there");
+                    if(i==numberOfImages){ i = 0;}
+                    images[i].className = "fx";
+                    if(i===0){ images[numberOfImages-2].className = "";}
+                    if(i===1){ images[numberOfImages-1].className = "";}
+                    if(i>1){ images[i-2].className = "";}
+                    i++;
 
-
-                if($next < $imgNum-1){
-                    $next++;
                 }
-                else {
-                    $next = 0;
-                }
-                if($current < $imgNum-1){
-                    $current++;
-                }
-                else {
-                    $current =0;
-                }
-            }
-
-
+            };
 
             $('#fullpage #section1').hide();
 
@@ -117,25 +110,7 @@
                             $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
                                 $('.add_ring').addClass('ring');
                                 $('.add_ring2').addClass('ring ring2');
-                                //carousel();
-                                (function(){
-                                    document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
-                                    window.setInterval(kenBurns, 6000);
-                                    var images = document.getElementById('slideshow').getElementsByTagName('img'),
-                                            numberOfImages  = images.length,
-                                            i= 1;
-
-                                    function kenBurns() {
-                                        if(i==numberOfImages){ i = 0;}
-                                        images[i].className = "fx";
-                                        if(i===0){ images[numberOfImages-2].className = "";}
-                                        if(i===1){ images[numberOfImages-1].className = "";}
-                                        if(i>1){ images[i-2].className = "";}
-                                        i++;
-
-                                    }
-                                })();
-
+                                slideEffect();
                             });
 
                             $.fn.fullpage.setAllowScrolling(false,'up');
