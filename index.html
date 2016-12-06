@@ -32,7 +32,7 @@
         <div class="page-one section" id="section1">
             <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic">
 
-            <div class="slideshow">
+            <div id="slideshow">
                 <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive mySlides">
                 <img src="images/Capture2.jpg" alt="school pic" class="img-responsive mySlides">
                 <img src="images/Capture.jpg" alt="school pic" class="img-responsive mySlides">
@@ -94,6 +94,8 @@
                 }
             }
 
+
+
             $('#fullpage #section1').hide();
 
             $(window).on('load', function() {
@@ -108,14 +110,6 @@
 
                     anchors:['Page1','Page2','lastpage'],
 
-                    /*onLeave : function(index,nextIndex,direction){
-                        if (index == 2 && direction == 'down' && nextIndex == 3){
-                            console.log('yes');
-                            $.fn.fullpage.setAllowScrolling(true,'all');
-                            $.fn.fullpage.setKeyboardScrolling(true, 'all');
-                        }
-                    },*/
-
                     afterLoad : function(anchorLink,index) {
 
                         if (index == 2 || anchorLink == 'Page2'){
@@ -123,7 +117,25 @@
                             $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
                                 $('.add_ring').addClass('ring');
                                 $('.add_ring2').addClass('ring ring2');
-                                carousel();
+                                //carousel();
+                                (function(){
+                                    document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
+                                    window.setInterval(kenBurns, 6000);
+                                    var images = document.getElementById('slideshow').getElementsByTagName('img'),
+                                            numberOfImages  = images.length,
+                                            i= 1;
+
+                                    function kenBurns() {
+                                        if(i==numberOfImages){ i = 0;}
+                                        images[i].className = "fx";
+                                        if(i===0){ images[numberOfImages-2].className = "";}
+                                        if(i===1){ images[numberOfImages-1].className = "";}
+                                        if(i>1){ images[i-2].className = "";}
+                                        i++;
+
+                                    }
+                                })();
+
                             });
 
                             $.fn.fullpage.setAllowScrolling(false,'up');
@@ -137,8 +149,6 @@
                     }
 
                 });
-                //animation end string
-
 
                 //animation on landing page
                 $(".school-logo").fadeIn(1000);
@@ -147,17 +157,6 @@
                     $('.ring_add').addClass('ring');
                     $('.ring_add2').addClass('ring ring2');
                 });
-
-                //animation on clicking down arrow
-
-               /*
-                        $(".page-one-pic").delay(500).slideDown(100);
-                        $(".school-name").delay(500).fadeIn(500);
-                        $(".down-arrow-page-one").delay(1500).fadeIn().one(animationEnd, function(){
-                            carousel();
-                        });
-                   // });
-                });*/
 
             });
         </script>
