@@ -51,7 +51,18 @@
 
         <div class="section" id="section2">
             <img src="images/logo-color-vector-500x500.svg" alt="school logo" class="offscreen-logo">
-            <img src="images/the_principal.jpg" alt="school principal" class="principal-pic">
+            <div class="group">
+                <div class="left">
+                    <img src="images/the_principal.jpg" alt="school principal" class="principal-pic">
+                </div>
+                <div class="right">
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -129,7 +140,7 @@
 
                         if(index == 3 || anchorLink == 'lastpage'){
 
-                            $('.offscreen-logo').fadeIn(1000);
+                            $('.offscreen-logo').addClass('come-in-logo');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }

@@ -398,8 +398,74 @@ html,body {
     height: 130vh;
     width: auto;
     position: absolute;
-    display: none;
+    opacity: 0;
+}
+
+.come-in-logo {
+    -ms-transform:translateY(100%);
+    -moz-transform:translateY(100%);
+    -o-transform:translateY(100%);
+    -webkit-transform:translateY(100%);
+    transform:translateY(100%);
+
+    -webkit-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+    -ms-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+    -o-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+    -moz-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+    animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+
     opacity: 0.2;
+}
+
+@-webkit-keyframes come-in-logo {
+    to {
+        -webkit-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+@-o-keyframes come-in-logo {
+    to {
+        -o-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+@-moz-keyframes come-in-logo {
+    to {
+        -moz-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+@-ms-keyframes come-in-logo {
+    to {
+        -ms-transform:translateY(0);
+        transform:translateY(0);
+    }
+}
+
+
+@keyframes come-in-logo{
+    to{
+        transform:translateY(0)
+    }
+}
+
+.left {
+    float: left;
+    width: 30%;
+}
+
+.right {
+    float: right;
+    width: 70%;
+}
+
+.group:after {
+    content:"";
+    display: table;
+    clear: both;
 }
 
 .principal-pic {
@@ -414,12 +480,34 @@ html,body {
     z-index: 10;
     width: 300px;
     height: auto;
-    margin: 10%;
     position: relative;
+    max-width: 100%;
+    margin: 10%;
 
 }
 
+.text {
+    position: absolute;
+    z-index: 10;
+    margin:0;
+    top :36%;
+    left : 50%;
+    font-size: 1.6em;
+    color: white;
+    text-align: justify;
+    width: 40%;
+}
+
 /* media queries */
+
+@media screen and (max-width: 480px) {
+    .left,
+    .right {
+        float: none;
+        width: auto;
+    }
+}
+
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
     .blurred-school-pic .page-one-pic .mySlides {
         left: 50%;
