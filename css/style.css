@@ -407,11 +407,11 @@ html,body {
     -webkit-transform:translateY(100%);
     transform:translateY(100%);
 
-    -webkit-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
-    -ms-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
-    -o-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
-    -moz-animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
-    animation:come-in-logo 0.5s cubic-bezier(0.445, 0.050, 0.550, 0.950) forwards;
+    -webkit-animation:come-in-logo 0.8s ease-out forwards;
+    -ms-animation:come-in-logo 0.8s ease-out forwards;
+    -o-animation:come-in-logo 0.8s ease-out forwards;
+    -moz-animation:come-in-logo 0.8s ease-out forwards;
+    animation:come-in-logo 0.8s ease-out forwards;
 
     opacity: 0.2;
 }
