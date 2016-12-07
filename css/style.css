@@ -390,6 +390,8 @@ html,body {
 #section2 {
     background-color: #4f2500;
 }
+
+
 .offscreen-logo {
     top: -120px;
     left: -360px;
@@ -400,6 +402,22 @@ html,body {
     opacity: 0.2;
 }
 
+.principal-pic {
+    display: block;
+
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+
+    z-index: 10;
+    width: 300px;
+    height: auto;
+    margin: 10%;
+    position: relative;
+
+}
 
 /* media queries */
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
