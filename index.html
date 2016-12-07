@@ -107,7 +107,7 @@
             };
 
             //hide the later sections for smooth animations
-            $('#fullpage #section1 #section2 .page-one-pic').hide();
+            $('#fullpage #section1 #section2 .page-one-pic').css('visibility','hidden');
 
             $(window).on('load', function() {
                 //whenever the page is refreshed it reaches the landing page
@@ -118,7 +118,7 @@
                 //variable for animation ends for all vendors required for callback function
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
                 //show the other sections now that the page has loaded
-                $('#fullpage #section1 #section2 .page-one-pic').show();
+                $('#fullpage #section1 #section2 .page-one-pic').css('visibility','visible');
 
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
