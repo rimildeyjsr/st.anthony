@@ -396,8 +396,10 @@ html,body {
     height: 130vh;
     width: auto;
     position: absolute;
+    display: none;
     opacity: 0.2;
 }
+
 
 /* media queries */
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
