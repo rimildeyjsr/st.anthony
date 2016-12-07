@@ -49,7 +49,7 @@
             <div class="add_ring2"></div>
         </div>
 
-        <div class="section">
+        <div class="section" id="section2">
             <img src="images/logo-color-vector-500x500.svg" alt="school logo" class="offscreen-logo">
         </div>
 
@@ -95,7 +95,7 @@
             };
 
             //hide the later sections for smooth animations
-            $('#fullpage #section1').hide();
+            $('#fullpage #section1 #section2 .page-one-pic').hide();
 
             $(window).on('load', function() {
                 //whenever the page is refreshed it reaches the landing page
@@ -106,7 +106,7 @@
                 //variable for animation ends for all vendors required for callback function
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
                 //show the other sections now that the page has loaded
-                $('#fullpage #section1').show();
+                $('#fullpage #section1 #section2 .page-one-pic').show();
 
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages

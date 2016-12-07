@@ -387,6 +387,9 @@ html,body {
     transform: scale(1.1);
 }
 
+#section2 {
+    background-color: #4f2500;
+}
 .offscreen-logo {
     top: -120px;
     left: -360px;
