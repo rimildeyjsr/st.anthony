@@ -387,7 +387,14 @@ html,body {
     transform: scale(1.1);
 }
 
-
+.offscreen-logo {
+    top: -120px;
+    left: -360px;
+    height: 130vh;
+    width: auto;
+    position: absolute;
+    opacity: 0.2;
+}
 
 /* media queries */
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
