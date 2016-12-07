@@ -68,17 +68,19 @@
             });
         </script>
         <script>
-
+            //loops through images and applies kenburns effect
             function slideEffect(){
-                //console.log("here");
+                //apply fx class to first element
                 document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
+                //loop kenburns effect every 6 seconds
                 window.setInterval(kenBurns, 6000);
+                //gets all images under slideshow
                 var images = document.getElementById('slideshow').getElementsByTagName('img'),
                         numberOfImages  = images.length,
                         i= 1;
 
                 function kenBurns() {
-                    //console.log("there");
+                    //applies class fx appropriately
                     if(i==numberOfImages){ i = 0;}
                     images[i].className = "fx";
                     if(i===0){ images[numberOfImages-2].className = "";}
@@ -86,29 +88,32 @@
                     if(i>1){ images[i-2].className = "";}
                     i++;
                     if (i == 2) {
-                        console.log('here');
                         $('.page-one-pic').hide();
                     }
 
                 }
             };
 
+            //hide the later sections for smooth animations
             $('#fullpage #section1').hide();
 
             $(window).on('load', function() {
+                //whenever the page is refreshed it reaches the landing page
                 window.location.hash = '#Page1';
             });
 
             $(document).ready(function(){
+                //variable for animation ends for all vendors required for callback function
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                //show the other sections now that the page has loaded
                 $('#fullpage #section1').show();
 
                 $('#fullpage').fullpage({
-
+                    //names for the anchors of the pages
                     anchors:['Page1','Page2','lastpage'],
 
                     afterLoad : function(anchorLink,index) {
-
+                        //after loading a section, perform these functions
                         if (index == 2 || anchorLink == 'Page2'){
                             $('.school-name').addClass('come-in');
                             $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
