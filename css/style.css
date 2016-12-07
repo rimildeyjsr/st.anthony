@@ -96,7 +96,7 @@ html,body {
 
 .ring2 {
     -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2;
+    -moz-animation-delay: 1.2s;
     -o-animation-delay: 1.2s;
     -ms-animation-delay: 1.2s;
     animation-delay: 1.2s;
