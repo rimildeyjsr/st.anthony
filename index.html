@@ -30,13 +30,13 @@
         </div>
 
         <div class="page-one section" id="section1">
-            <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive page-one-pic">
+            <img src="images/page-1-hero-image.jpg" alt="school's image" class="page-one-pic">
 
             <div id="slideshow">
-                <img src="images/page-1-hero-image.jpg" alt="school's image" class="img-responsive mySlides">
-                <img src="images/Capture2.jpg" alt="school pic" class="img-responsive mySlides">
-                <img src="images/Capture.jpg" alt="school pic" class="img-responsive mySlides">
-                <img src="images/Capture3.jpg" alt="school pic" class="img-responsive mySlides">
+                <img src="images/page-1-hero-image.jpg" alt="school's image" class="mySlides">
+                <img src="images/Capture2.jpg" alt="school pic" class="mySlides">
+                <img src="images/Capture.jpg" alt="school pic" class="mySlides">
+                <img src="images/Capture3.jpg" alt="school pic" class="mySlides">
 
             </div>
 
@@ -85,6 +85,10 @@
                     if(i===1){ images[numberOfImages-1].className = "";}
                     if(i>1){ images[i-2].className = "";}
                     i++;
+                    if (i == 2) {
+                        console.log('here');
+                        $('.page-one-pic').hide();
+                    }
 
                 }
             };
