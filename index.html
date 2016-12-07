@@ -147,8 +147,11 @@
                         }
 
                         if(index == 3 || anchorLink == 'lastpage'){
-
-                            $('.offscreen-logo').addClass('come-in-logo');
+                            var opacity = 0.2;
+                            $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
+                                $('.right .text').addClass('animated fadeInUp');
+                                $('.left .principal-pic').addClass('animated fadeInDown');
+                            });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }

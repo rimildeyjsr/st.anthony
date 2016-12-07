@@ -416,6 +416,28 @@ html,body {
     opacity: 0.2;
 }
 
+.come-in-text {
+    -webkit-animation:fadeInUp 0.8s ease-out forwards;
+    -ms-animation:fadeInUp 0.8s ease-out forwards;
+    -o-animation:fadeInUp 0.8s ease-out forwards;
+    -moz-animation:fadeInUp 0.8s ease-out forwards;
+    animation:fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
 @-webkit-keyframes come-in-logo {
     to {
         -webkit-transform:translateY(0);
@@ -482,7 +504,7 @@ html,body {
     position: relative;
     max-width: 100%;
     margin: 10% 10% 10% 37%;
-
+    opacity:0;
 }
 
 .text {
@@ -499,6 +521,7 @@ html,body {
     font-weight:300;
     font-style: italic;
     text-align-last: center;
+    opacity: 0;
 }
 
 /* media queries */
