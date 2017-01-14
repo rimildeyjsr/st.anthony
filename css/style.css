@@ -593,6 +593,7 @@ html,body {
 
     .offscreen-logo {
         height: 95vh;
+        top: -115px;
     }
 
 }
@@ -624,7 +625,8 @@ html,body {
         }
 
         .offscreen-logo {
-            height: 100vh;
+            height: 110vh;
+            top: -115px;
         }
 
     }
@@ -656,7 +658,8 @@ html,body {
         }
 
         .offscreen-logo {
-            height: 105vh;
+            height: 120vh;
+            top: -115px;
         }
     }
     @media screen and (min-width: 755px) {
@@ -687,7 +690,8 @@ html,body {
         }
 
         .offscreen-logo {
-            height: 110vh;
+            height: 120vh;
+            top: -115px;
         }
 
     }
@@ -719,7 +723,8 @@ html,body {
         }
 
         .offscreen-logo {
-            height: 115vh;
+            height: 120vh;
+            top: -125px;
         }
 
     }
@@ -754,8 +759,10 @@ html,body {
 
         .offscreen-logo {
             height: 120vh;
+            top: -125px;
         }
     }
+
     @media screen and (min-width: 1025px) {
         /* big landscape tablets, laptops, and desktops */
         .school-logo{
@@ -784,9 +791,11 @@ html,body {
 
         .offscreen-logo {
             height: 125vh;
+            top: -120px;
         }
 
     }
+
     @media screen and (min-width: 1281px) {
         /* hi-res laptops and desktops */
         .school-logo{
@@ -815,6 +824,7 @@ html,body {
 
         .offscreen-logo {
             height: 130vh;
+            top: -120px;
         }
 
     }
