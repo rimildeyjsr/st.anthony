@@ -585,10 +585,12 @@ html,body {
         top: 25%;
     }
 
-
     .text {
         font-size: 1.4em;
         top:22%;
+        width: 80%;
+        top :50%;
+        left : 10%;
     }
 
     .offscreen-logo {
@@ -597,8 +599,8 @@ html,body {
     }
 
     .principal-pic {
-        margin: 5% 10% 80% 20% ;
-        width: 200px;
+        margin: 0.2% 10% 80% 25% ;
+        width: 180px;
     }
 
 }
@@ -627,6 +629,8 @@ html,body {
         .text {
             font-size: 1.5em;
             top: 22%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
@@ -635,8 +639,8 @@ html,body {
         }
 
         .principal-pic {
-            margin: 10% 10% 10% 37%;
-            width: 350px ;
+            margin: 10% 8% 10% 42%;
+            width: 250px ;
         }
 
     }
@@ -665,6 +669,8 @@ html,body {
         .text {
             font-size: 1.6em;
             top: 22%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
@@ -702,6 +708,8 @@ html,body {
         .text {
             font-size: 1.7em;
             top: 22%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
@@ -740,6 +748,8 @@ html,body {
         .text {
             font-size: 1.8em;
             top: 22%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
@@ -780,6 +790,8 @@ html,body {
         .text {
             font-size: 1.9em;
             top: 20%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
@@ -817,6 +829,8 @@ html,body {
         .text {
             font-size: 2em;
             top:20%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
@@ -855,6 +869,8 @@ html,body {
         .text {
             font-size: 2.55em;
             top: 20%;
+            left : 50%;
+            width: 40%;
         }
 
         .offscreen-logo {
