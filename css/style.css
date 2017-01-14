@@ -588,6 +588,11 @@ html,body {
 
     .text {
         font-size: 1.4em;
+        top:22%;
+    }
+
+    .offscreen-logo {
+        height: 95vh;
     }
 
 }
@@ -615,6 +620,11 @@ html,body {
 
         .text {
             font-size: 1.5em;
+            top: 22%;
+        }
+
+        .offscreen-logo {
+            height: 100vh;
         }
 
     }
@@ -642,6 +652,11 @@ html,body {
 
         .text {
             font-size: 1.6em;
+            top: 22%;
+        }
+
+        .offscreen-logo {
+            height: 105vh;
         }
     }
     @media screen and (min-width: 755px) {
@@ -668,6 +683,11 @@ html,body {
 
         .text {
             font-size: 1.7em;
+            top: 22%;
+        }
+
+        .offscreen-logo {
+            height: 110vh;
         }
 
     }
@@ -695,6 +715,11 @@ html,body {
 
         .text {
             font-size: 1.8em;
+            top: 22%;
+        }
+
+        .offscreen-logo {
+            height: 115vh;
         }
 
     }
@@ -724,6 +749,11 @@ html,body {
 
         .text {
             font-size: 1.9em;
+            top: 20%;
+        }
+
+        .offscreen-logo {
+            height: 120vh;
         }
     }
     @media screen and (min-width: 1025px) {
@@ -749,6 +779,11 @@ html,body {
 
         .text {
             font-size: 2em;
+            top:20%;
+        }
+
+        .offscreen-logo {
+            height: 125vh;
         }
 
     }
@@ -775,6 +810,11 @@ html,body {
 
         .text {
             font-size: 2.55em;
+            top: 20%;
+        }
+
+        .offscreen-logo {
+            height: 130vh;
         }
 
     }
