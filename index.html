@@ -44,6 +44,7 @@
             </div>
 
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
+            <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo2 animated flipInY">
             <a href="#lastpage">
                 <img data-anchor="Page3" src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow-page-one animated
             slideInDown">
@@ -118,7 +119,6 @@
 
             $(document).ready(function(){
                 //variable for animation ends for all vendors required for callback function
-
                 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
                 $('#fullpage').fullpage({
@@ -135,6 +135,9 @@
 
                         }
                         if (index == 2 || anchorLink == 'Page2'){
+                            if (window.innerWidth < 480) {
+                                $('.school-logo2').addClass('come-in');
+                            }
                             $('.school-name').addClass('come-in');
                             $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
                                 $('.add_ring').addClass('ring');
@@ -168,6 +171,7 @@
                 });
 
             });
+
         </script>
 
     </body>
