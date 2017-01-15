@@ -25,11 +25,11 @@
         <div class="page-load-screen section active" id="section0">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
             <img src="images/landing-page-blurred.jpg" alt="blurred image of the school" class="img-responsive blurred-school-pic">
-            <a href="#Page2">
+            <!--<a href="#Page2">
                 <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
             </a>
             <div class="ring_add"></div>
-            <div class="ring_add2"></div>
+            <div class="ring_add2"></div>-->
         </div>
 
         <div class="page-one section" id="section1">
@@ -125,7 +125,8 @@
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
                     anchors:['Page1','Page2','lastpage'],
-                    fixedElements: '.down-arrow,.ring_add,.ring_add2',
+                    navigation: true,
+                    navigationPosition: 'right',
 
                     afterLoad : function(anchorLink,index) {
                         //after loading a section, perform these functions
