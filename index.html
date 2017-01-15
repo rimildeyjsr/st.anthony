@@ -111,10 +111,7 @@
 
                 }
             };
-
-            //hide the later sections for smooth animations
-            //$('#fullpage #section1 #section2 .page-one-pic').css('visibility','hidden');
-
+            
             $(window).on('load', function() {
                 //whenever the page is refreshed it reaches the landing page
                 window.location.hash = '#Page1';
@@ -156,7 +153,6 @@
                         }
 
                         if(index == 3 || anchorLink == 'lastpage'){
-                            var opacity = 0.2;
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
                                 $('.right .text').addClass('animated fadeInUp');
                                 $('.left .principal-pic').addClass('animated fadeInDown');
