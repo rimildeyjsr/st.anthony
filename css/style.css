@@ -332,15 +332,15 @@ html,body {
     height: 100vh;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
-    -webkit-transition-duration: 3s, 16s;
+    -webkit-transition-duration: 3s, 25s;
     -moz-transition-property: opacity, -moz-transform;
-    -moz-transition-duration: 3s, 16s;
+    -moz-transition-duration: 3s, 25s;
     -ms-transition-property: opacity, -ms-transform;
-    -ms-transition-duration: 3s, 16s;
+    -ms-transition-duration: 3s, 25s;
     -o-transition-property: opacity, -o-transform;
-    -o-transition-duration: 3s, 16s;
+    -o-transition-duration: 3s, 25s;
     transition-property: opacity, transform;
-    transition-duration:3s, 16s;
+    transition-duration:3s, 25s;
 }
 
 #slideshow img {
@@ -390,11 +390,11 @@ html,body {
 
 #slideshow .fx {
     opacity:1;
-    -webkit-transform: scale(1.25);
-    -moz-transform: scale(1.25);
-    -ms-transform: scale(1.25);
-    -o-transform: scale(1.25);
-    transform: scale(1.25);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 #section2 {
