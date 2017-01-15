@@ -141,10 +141,9 @@
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
                             }
-                            $('.school-name').addClass('come-in');
-                            $('.down-arrow-page-one').addClass('come-down').one(animationEnd,function(){
-                                $('.add_ring').addClass('ring');
-                                $('.add_ring2').addClass('ring ring2');
+                            $('.school-name').addClass('come-in').one(animationEnd,function(){
+                                //$('.add_ring').addClass('ring');
+                                //('.add_ring2').addClass('ring ring2');
                                 slideEffect();
                             });
 
