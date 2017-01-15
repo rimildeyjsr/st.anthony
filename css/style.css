@@ -332,15 +332,15 @@ html,body {
     height: 100vh;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
-    -webkit-transition-duration: 3s, 10s;
+    -webkit-transition-duration: 3s, 16s;
     -moz-transition-property: opacity, -moz-transform;
-    -moz-transition-duration: 3s, 10s;
+    -moz-transition-duration: 3s, 16s;
     -ms-transition-property: opacity, -ms-transform;
-    -ms-transition-duration: 3s, 10s;
+    -ms-transition-duration: 3s, 16s;
     -o-transition-property: opacity, -o-transform;
-    -o-transition-duration: 3s, 10s;
+    -o-transition-duration: 3s, 16s;
     transition-property: opacity, transform;
-    transition-duration:3s, 10s;
+    transition-duration:3s, 16s;
 }
 
 #slideshow img {
@@ -478,8 +478,8 @@ html,body {
     clear: both;
 }
 
-.principal-pic {
-    display: block;
+.admin-pic {
+    display: none;
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;

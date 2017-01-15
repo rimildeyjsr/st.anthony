@@ -63,15 +63,12 @@
             <img src="images/logo-color-vector-500x500.svg" alt="school logo" class="offscreen-logo">
             <div class="group">
                 <div class="left">
-                    <img src="images/the_principal.jpg" alt="school principal" class="principal-pic">
+                    <img src="images/the_principal.jpg" alt="school principal" class="admin-pic">
+                    <img src="images/mrs-cooke.png" alt="school vice principal" class="admin-pic">
                 </div>
                 <div class="right">
                     <p class="text">
-                        "Education is a simple yet a serious process. It is a process of making a human being into 'being human'. Stress at our
-                        institution is on this aspect.<br>
-                        I invite you to join us and make our country proud."
-                        <br><br>
-                        -The Principal
+
                     </p>
                 </div>
 
@@ -119,11 +116,11 @@
 
             $('#section1').hide();
             $('#section2').hide();
+            //variable for animation ends for all vendors required for callback function
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
 
             $(document).ready(function(){
-                //variable for animation ends for all vendors required for callback function
-                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
                     anchors:['Page1','Page2','lastpage'],
@@ -155,8 +152,6 @@
                         if(index == 3 || anchorLink == 'lastpage'){
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
                                 swap_testimonial();
-                                $('.right .text').addClass('animated fadeInUp');
-                                $('.left .principal-pic').addClass('animated fadeInDown');
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -176,8 +171,36 @@
             });
 
             function swap_testimonial(){
+                var arr = [];
+                s1 = "\"Education is a simple yet a serious process." +
+                        " It is a process of making a human being into 'being human'." +
+                        " Stress at our institution is on this aspect." +
+                        "I invite you to join us and make our country proud.\"" +
+                        "\n\n  -The Principal";
 
+                s2 = "\"We are all Indians firstly and lastly\" " +
+                        "Whatever anyone else might say, we need to uphold this God-given identity " +
+                        "through our actions, thoughts and what we might say." +
+                        " Long live the Indian Republic.\"" +
+                        "\n\n -The Vice Principal ";
+
+                arr.push(s1);
+                arr.push(s2);
+
+                var length = arr.length;
+                var i=0;
+                function swap() {
+                    if (i == length) {
+                        i = 0;
+                    }
+
+                    $('.right .text').html(arr[i]).addClass('animated fadeInUp');
+                    i++;
+                }
+
+                window.setInterval(swap,4000);
             }
+
 
         </script>
 
