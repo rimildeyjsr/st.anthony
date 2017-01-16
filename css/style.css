@@ -332,15 +332,15 @@ html,body {
     height: 100vh;
     opacity:0;
     -webkit-transition-property: opacity, -webkit-transform;
-    -webkit-transition-duration: 3s, 25s;
+    -webkit-transition-duration: 3s, 45s;
     -moz-transition-property: opacity, -moz-transform;
-    -moz-transition-duration: 3s, 25s;
+    -moz-transition-duration: 3s, 45s;
     -ms-transition-property: opacity, -ms-transform;
-    -ms-transition-duration: 3s, 25s;
+    -ms-transition-duration: 3s, 45s;
     -o-transition-property: opacity, -o-transform;
-    -o-transition-duration: 3s, 25s;
+    -o-transition-duration: 3s, 4s;
     transition-property: opacity, transform;
-    transition-duration:3s, 25s;
+    transition-duration:3s, 45s;
 }
 
 #slideshow img {
