@@ -25,11 +25,11 @@
         <div class="page-load-screen section active" id="section0">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
             <img src="images/landing-page-blurred.jpg" alt="blurred image of the school" class="img-responsive blurred-school-pic">
-            <!--<a href="#Page2">
+            <a href="#Page2">
                 <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
             </a>
             <div class="ring_add"></div>
-            <div class="ring_add2"></div>-->
+            <div class="ring_add2"></div>
         </div>
 
         <div class="page-one section" id="section1">
@@ -133,15 +133,15 @@
 
                         if (index == 1 || anchorLink == 'Page1'){
                             //show the other sections now that the page has loaded
+                            $('#fp-nav').hide();
                             $('#section1').show();
                             $('#section2').show();
 
                         }
                         if (index == 2 || anchorLink == 'Page2'){
+                            $('#fp-nav').show();
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
-                                slideEffect();
-
                             }
                             $('.school-name').addClass('come-in');
                             slideEffect();
@@ -154,6 +154,7 @@
                         }
 
                         if(index == 3 || anchorLink == 'lastpage'){
+                            $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
                                 swap_testimonial();
                             });
