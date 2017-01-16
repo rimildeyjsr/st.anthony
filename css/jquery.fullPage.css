@@ -112,6 +112,7 @@ html.fp-enabled,
 }
 #fp-nav.right {
     right: 17px;
+    left: 90%; /*fixed issue*/
 }
 #fp-nav.left {
     left: 17px;
