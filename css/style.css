@@ -553,7 +553,7 @@ html,body {
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
-    .blurred-school-pic .page-one-pic .mySlides {
+    .blurred-school-pic .page-one-pic {
         left: 50%;
         margin-left: -512px;   /* 50% */
     }

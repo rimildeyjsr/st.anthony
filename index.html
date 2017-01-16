@@ -36,18 +36,16 @@
             <img src="images/page-1-hero-image.jpg" alt="school's image" class="page-one-pic">
 
             <div id="slideshow">
-                <img src="images/Campus2.jpg" alt="school pic" class="mySlides">
-                <img src="images/bio_lab_optimised.jpg" alt="bio lab pic" class="mySlides">
-                <img src="images/Capture.jpg" alt="school pic" class="mySlides">
-                <img src="images/class_optimised.jpg" alt="class pic" class="mySlides">
-                <img src="images/LFPS_optimised.jpg" alt="school pic" class="mySlides">
-                <img src="images/phy_lab_optimmised.jpg" alt="physics lab" class="mySlides">
-                <img src="images/cs_lab.jpg" alt="class pic" class="mySlides">
-                <img src="images/x-optimised.jpg" alt="school pic" class="mySlides">
-                <img src="images/page-1-hero-image.jpg" alt="school's image" class="mySlides">
-                <img src="images/kindergarten2.jpg" alt="kindergarten" class="mySlides">
-
-
+                <img src="images/Campus2.jpg" alt="school pic">
+                <img src="images/bio_lab_optimised.jpg" alt="bio lab pic">
+                <img src="images/Capture.jpg" alt="school pic">
+                <img src="images/class_optimised.jpg" alt="class pic">
+                <img src="images/LFPS_optimised.jpg" alt="school pic">
+                <img src="images/phy_lab_optimmised.jpg" alt="physics lab">
+                <img src="images/cs_lab.jpg" alt="class pic">
+                <img src="images/x-optimised.jpg" alt="school pic">
+                <img src="images/page-1-hero-image.jpg" alt="school's image">
+                <img src="images/kindergarten2.jpg" alt="kindergarten">
             </div>
 
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
@@ -88,7 +86,7 @@
             function slideEffect(){
                 //apply fx class to first element
                 document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
-                //loop kenburns effect every 6 seconds
+                //loop kenburns effect every 15 seconds
                 window.setInterval(kenBurns, 15000);
                 //gets all images under slideshow
                 var images = document.getElementById('slideshow').getElementsByTagName('img'),
@@ -103,10 +101,6 @@
                     if(i===1){ images[numberOfImages-1].className = "";}
                     if(i>1){ images[i-2].className = "";}
                     i++;
-                    if (i == 2) {
-                        $('.page-one-pic').hide();
-                    }
-
                 }
             };
 
@@ -141,14 +135,16 @@
                         if (index == 2 || anchorLink == 'Page2'){
                             $('#fp-nav').show();
                             if (window.innerWidth < 480) {
-                                $('.school-logo2').fadeIn();
+                                $('.school-logo2').fadeIn().one(animationEnd,function(){
+                                    slideEffect();
+                                });
                             }
-                            $('.school-name').addClass('come-in');
-                            slideEffect();
+                            $('.school-name').addClass('come-in').one(animationEnd,function(){
+                                slideEffect();
+                            });
+
                                 //$('.add_ring').addClass('ring');
                                 //('.add_ring2').addClass('ring ring2');
-
-
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
