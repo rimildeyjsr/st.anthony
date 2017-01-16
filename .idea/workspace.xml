@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/jquery.fullPage.css" afterPath="$PROJECT_DIR$/css/jquery.fullPage.css" />
     </list>
     <ignored path="portfolio.iws" />
@@ -38,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-20.653847">
-              <caret line="351" column="1" selection-start-line="351" selection-start-column="1" selection-end-line="351" selection-end-column="1" />
+              <caret line="567" column="22" selection-start-line="567" selection-start-column="22" selection-end-line="567" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -47,8 +46,8 @@
       <file leaf-file-name="jquery.fullPage.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/jquery.fullPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36346865">
-              <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.8745387">
+              <caret line="241" column="16" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -634,14 +633,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.653847">
-          <caret line="351" column="1" selection-start-line="351" selection-start-column="1" selection-end-line="351" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.269231">
@@ -650,10 +641,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.653847">
+          <caret line="567" column="22" selection-start-line="567" selection-start-column="22" selection-end-line="567" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.fullPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36346865">
-          <caret line="114" column="30" selection-start-line="114" selection-start-column="30" selection-end-line="114" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.8745387">
+          <caret line="241" column="16" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="16" />
           <folding />
         </state>
       </provider>

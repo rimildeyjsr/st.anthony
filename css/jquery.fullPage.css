@@ -112,7 +112,7 @@ html.fp-enabled,
 }
 #fp-nav.right {
     right: 17px;
-    left: 90%; /*fixed issue*/
+    left: 95%; /*fixed issue*/
 }
 #fp-nav.left {
     left: 17px;
@@ -227,4 +227,18 @@ html.fp-enabled,
 .fp-responsive .fp-auto-height-responsive .fp-slide,
 .fp-responsive .fp-auto-height-responsive .fp-tableCell {
     height: auto !important;
+}
+
+@media screen and (max-width: 480px) {
+    #fp-nav.right {
+        right: 17px;
+        left: 90%; /*fixed issue*/
+    }
+}
+
+@media screen and (min-width: 481px) {
+    #fp-nav.right {
+        right: 17px;
+        left: 95%; /*fixed issue*/
+    }
 }
