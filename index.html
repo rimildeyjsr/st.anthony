@@ -63,11 +63,13 @@
             <div class="group">
                 <div class="left">
                     <img src="images/the_principal.jpg" alt="school principal" class="admin-pic">
-                    <img src="images/mrs-cooke.png" alt="school vice principal" class="admin-pic">
+                   <!--<img src="images/mrs-cooke.png" alt="school vice principal" class="admin-pic">-->
                 </div>
                 <div class="right">
                     <p class="text">
-
+                        "Education is a simple yet a serious process. It is a process of making a human being into 'being human'.
+                        Stress at our institution is on this aspect.<br>I invite you to join us and make our country proud
+                        <br><br>-The Principal"
                     </p>
                 </div>
 
@@ -150,7 +152,8 @@
                         if(index == 3 || anchorLink == 'lastpage'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
-                                swap_testimonial();
+                                $('.right .text').addClass('animated fadeInUp');
+                                $('.left .admin-pic').addClass('animated fadeInDown');
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -169,7 +172,7 @@
 
             });
 
-            function swap_testimonial(){
+            /*function swap_testimonial(){
                 var arr = [];
                 s1 = "\"Education is a simple yet a serious process." +
                         " It is a process of making a human being into 'being human'." +
@@ -199,7 +202,7 @@
                 }
 
                 window.setInterval(swap,4000);
-            }
+            }*/
 
 
         </script>
