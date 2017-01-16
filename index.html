@@ -66,7 +66,12 @@
                    <!--<img src="images/mrs-cooke.png" alt="school vice principal" class="admin-pic">-->
                 </div>
                 <div class="right">
-                    <p class="text">
+                    <p class="text" id="principal">
+                        "Education is a simple yet a serious process. It is a process of making a human being into 'being human'.
+                        Stress at our institution is on this aspect.<br>I invite you to join us and make our country proud."
+                        <br><br>-The Principal
+                    </p>
+                    <p class="text" id="vice-principal">
                         "Education is a simple yet a serious process. It is a process of making a human being into 'being human'.
                         Stress at our institution is on this aspect.<br>I invite you to join us and make our country proud."
                         <br><br>-The Principal
@@ -138,6 +143,7 @@
                             $('#fp-nav').show();
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
+                                //$('#slideshow').addClass('overlay');
                             }
                             $('.school-name').addClass('come-in');
                                 slideEffect();
@@ -152,8 +158,9 @@
                         if(index == 3 || anchorLink == 'lastpage'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
-                                $('.right .text').addClass('animated fadeInUp');
-                                $('.left .admin-pic').addClass('animated fadeInDown');
+                                //$('.right .text').addClass('animated fadeInUp');
+                                //$('.left .admin-pic').addClass('animated fadeInDown');
+                                swap_testimonial();
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -172,7 +179,7 @@
 
             });
 
-            /*function swap_testimonial(){
+            function swap_testimonial(){
                 var arr = [];
                 s1 = "\"Education is a simple yet a serious process." +
                         " It is a process of making a human being into 'being human'." +
@@ -191,18 +198,23 @@
 
                 var length = arr.length;
                 var i=0;
+                swap();
                 function swap() {
                     if (i == length) {
                         i = 0;
                     }
 
-                    $('.right .text').html(arr[i]).addClass('animated fadeInUp');
-                    i++;
+                    $('.right .text').addClass('animated fadeInUp').one(animationEnd,function(){
+                        $('.right .text').removeClass('fadeInUp').delay(5000);
+                        $('.right .text').addClass('fadeOutUp').one(animationEnd,function(){
+                            swap();
+                        });
+                    });
+
 
                 }
 
-                window.setInterval(swap,4000);
-            }*/
+            }
 
 
         </script>
