@@ -140,12 +140,14 @@
                         if (index == 2 || anchorLink == 'Page2'){
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
+                                slideEffect();
+
                             }
-                            $('.school-name').addClass('come-in').one(animationEnd,function(){
+                            $('.school-name').addClass('come-in');
+                            slideEffect();
                                 //$('.add_ring').addClass('ring');
                                 //('.add_ring2').addClass('ring ring2');
-                                slideEffect();
-                            });
+
 
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
