@@ -63,7 +63,7 @@
             <div class="group">
                 <div class="left">
                     <img src="images/the_principal.jpg" alt="school principal" class="admin-pic">
-                   <!--<img src="images/mrs-cooke.png" alt="school vice principal" class="admin-pic">-->
+                    <img src="images/mrs-cooke.png" alt="school vice principal" class="admin-pic">
                 </div>
                 <div class="right">
                     <p class="text" id="principal">
@@ -71,14 +71,18 @@
                         Stress at our institution is on this aspect.<br>I invite you to join us and make our country proud."
                         <br><br>-The Principal
                     </p>
-                    <!--<p class="text" id="vice-principal">
+                    <p class="text" id="vice-principal">
                         "Education is a simple yet a serious process. It is a process of making a human being into 'being human'.
                         Stress at our institution is on this aspect.<br>I invite you to join us and make our country proud."
-                        <br><br>-The Principal
-                    </p>-->
+                        <br><br>-The vice Principal
+                    </p>
                 </div>
 
             </div>
+
+        </div>
+
+        <div class="section" id="section3">
 
         </div>
 
@@ -158,9 +162,17 @@
                         if(index == 3 || anchorLink == 'lastpage'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
-                                $('.right .text').addClass('fadeInUpExit');
-                                $('.left .admin-pic').addClass('fadeInDownExit');
-                                //swap_testimonial();
+                                $('.text').each(function () {
+                                    var delay = $(this).index();
+                                    $(this).css('animation-delay', delay*8 + 's');
+                                    $(this).addClass('fadeInUpExit');
+                                });
+                                $('.admin-pic').each(function () {
+                                    var delay = $(this).index();
+                                    $(this).css('animation-delay', delay*8 + 's');
+                                    $(this).addClass('fadeInDownExit');
+                                });
+
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
