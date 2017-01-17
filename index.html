@@ -158,8 +158,8 @@
                         if(index == 3 || anchorLink == 'lastpage'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
-                                $('.right .text').addClass('animated fadeInUp');
-                                $('.left .admin-pic').addClass('animated fadeInDown');
+                                $('.right .text').addClass('fadeInUpExit');
+                                $('.left .admin-pic').addClass('fadeInDownExit');
                                 //swap_testimonial();
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
