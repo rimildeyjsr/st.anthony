@@ -535,7 +535,7 @@ html,body {
         -moz-transform: translateY(40%);
         -ms-transform: translateY(40%);
         -o-transform: translateY(40%);
-        transform: translateY(10px);
+        transform: translateY(40%);
     }
 
 }
@@ -584,6 +584,20 @@ html,body {
     }
 }
 
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 250px;
+    margin: 1rem;
+    position: relative;
+    width: 250px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+#section3 {
+    background-image: url(../images/landing-page-blurred.jpg);
+}
 /* media queries */
 
 @media screen and (max-width: 480px) {

@@ -15,6 +15,7 @@
         <!-- CSS Stylesheets -->
         <link href="css/normalize.css" rel="stylesheet">
         <link href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -83,7 +84,38 @@
         </div>
 
         <div class="section" id="section3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
 
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -122,6 +154,7 @@
 
             $('#section1').hide();
             $('#section2').hide();
+            $('#section3').hide();
             //variable for animation ends for all vendors required for callback function
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
@@ -129,7 +162,7 @@
             $(document).ready(function(){
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
-                    anchors:['Page1','Page2','lastpage'],
+                    anchors:['Page1','Page2','Page3','lastpage'],
                     navigation: true,
                     navigationPosition: 'right',
 
@@ -141,6 +174,7 @@
                             $('#fp-nav').hide();
                             $('#section1').show();
                             $('#section2').show();
+                            $('#section3').show();
 
                         }
                         if (index == 2 || anchorLink == 'Page2'){
@@ -159,7 +193,7 @@
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
 
-                        if(index == 3 || anchorLink == 'lastpage'){
+                        if(index == 3 || anchorLink == 'Page3'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
                                 $('.text').each(function () {
@@ -176,6 +210,10 @@
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
+                        }
+
+                        if(index == 4 || anchorLink == 'lastPage') {
+
                         }
                     }
 
