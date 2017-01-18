@@ -566,6 +566,9 @@ html,body {
 
 }
 
+#section3 {
+    background-image: url(../images/landing-page-blurred.jpg);
+}
 .card {
     background: #fff;
     border-radius: 2px;
@@ -581,9 +584,15 @@ html,body {
     margin: 15px 60px 15px 80px;
 }
 
-#section3 {
-    background-image: url(../images/landing-page-blurred.jpg);
+.section-heading {
+    text-align: center;
+    background-color: #4f2500;
+    color: white;
+    font-family: "Roboto Mono";
+    margin: 0 auto 20px auto;
+    width: 46%;
 }
+
 
 
 /* media queries */
