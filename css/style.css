@@ -571,12 +571,12 @@ html,body {
 }
 .card {
     background: #fff;
-    border-radius: 2px;
+    border-radius: 3px;
     display: inline-block;
     height: 220px;
     margin: 1% 5% 1% 5%;
     position: relative;
-    width: 13.5%;
+    width: 14%;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
@@ -593,7 +593,31 @@ html,body {
     width: 46%;
 }
 
+.card img {
+    -webkit-border-radius:50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 75%;
+    height: auto;
+    margin: 8% auto 25% auto;
+}
 
+.card h4 {
+    font-family: "Roboto Mono";
+    font-size: 1.15em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card h6 {
+    font-family: "Roboto Mono";
+    text-align: center;
+    font-size: 0.68em;
+    font-style: italic;
+}
 
 /* media queries */
 
