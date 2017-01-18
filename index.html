@@ -157,7 +157,59 @@
             </div>-->
         </div>
 
-    </div>
+        <div class="section" id="section4">
+            <div class="container-fluid">
+                <h2 class="section-heading">Helping Staff</h2>
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 card extra-left-margin">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-3 card extra-left-margin">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                        <img src="images/the_principal.jpg" alt="faculty">
+                        <h4>Mr C.A Francis</h4>
+                        <h6>Faculty of Mathematics</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
 
         <!-- Javascript files -->
         <script src="js/jquery-3.0.0.min.js"></script>
@@ -196,6 +248,7 @@
             $('#section1').hide();
             $('#section2').hide();
             $('#section3').hide();
+            $('#section4').hide();
             //variable for animation ends for all vendors required for callback function
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
@@ -203,7 +256,7 @@
             $(document).ready(function(){
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
-                    anchors:['Page1','Page2','Page3','lastpage'],
+                    anchors:['Page1','Page2','Page3','Page4','lastpage'],
                     navigation: true,
                     navigationPosition: 'right',
 
@@ -216,6 +269,7 @@
                             $('#section1').show();
                             $('#section2').show();
                             $('#section3').show();
+                            $('#section4').show();
 
                         }
                         if (index == 2 || anchorLink == 'Page2'){
@@ -239,7 +293,11 @@
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
 
-                        if(index == 4 || anchorLink == 'lastPage') {
+                        if(index == 4 || anchorLink == 'Page4') {
+                            $.fn.fullpage.setAllowScrolling(true,'up');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'up');
+                        }
+                        if(index == 5 || anchorLink == 'lastpage') {
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }

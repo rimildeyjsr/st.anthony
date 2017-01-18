@@ -566,7 +566,7 @@ html,body {
 
 }
 
-#section3 {
+#section3,#section4 {
     background-image: url(../images/landing-page-blurred.jpg);
 }
 .card {
