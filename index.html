@@ -203,14 +203,9 @@
                             $('#fp-nav').show();
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
-                                //$('#slideshow').addClass('overlay');
                             }
                             $('.school-name').addClass('come-in');
                                 slideEffect();
-                            
-
-                                //$('.add_ring').addClass('ring');
-                                //('.add_ring2').addClass('ring ring2');
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
@@ -218,16 +213,7 @@
                         if(index == 3 || anchorLink == 'Page3'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
-                                $('.text').each(function () {
-                                    var delay = $(this).index();
-                                    $(this).css('animation-delay', delay*8 + 's');
-                                    $(this).addClass('fadeInUpExit');
-                                });
-                                $('.admin-pic').each(function () {
-                                    var delay = $(this).index();
-                                    $(this).css('animation-delay', delay*8 + 's');
-                                    $(this).addClass('fadeInDownExit');
-                                });
+                                display();
 
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
@@ -265,29 +251,24 @@
                         " Long live the Indian Republic.\"" +
                         "\n\n -The Vice Principal ";
 
-                arr.push(s1);
-                arr.push(s2);
-
-                var length = arr.length;
-                var i=0;
-                swap();
-                function swap() {
-                    if (i == length) {
-                        i = 0;
-                    }
-
-                    $('.right .text').addClass('animated fadeInUp').one(animationEnd,function(){
-                        $('.right .text').removeClass('fadeInUp').delay(5000);
-                        $('.right .text').addClass('fadeOutUp').one(animationEnd,function(){
-                            swap();
-                        });
-                    });
-
-
-                }
-
             }*/
 
+            function display(){
+
+                window.setInterval(display,13000);
+
+                $('.text').each(function () {
+                    var delay = $(this).index();
+                    $(this).css('animation-delay', delay*8 + 's');
+                    $(this).addClass('fadeInUpExit');
+                });
+
+                $('.admin-pic').each(function () {
+                    var delay = $(this).index();
+                    $(this).css('animation-delay', delay*8 + 's');
+                    $(this).addClass('fadeInDownExit');
+                });
+            }
 
         </script>
 
