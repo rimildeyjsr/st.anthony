@@ -571,10 +571,14 @@ html,body {
     border-radius: 2px;
     display: inline-block;
     height: 220px;
-    margin: 1rem 3.5rem 1.5rem 3.5rem;
+    margin: 15px 60px 15px 60px;
     position: relative;
-    width: 200px;
+    width: 180px;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.extra-left-margin {
+    margin: 15px 60px 15px 80px;
 }
 
 #section3 {

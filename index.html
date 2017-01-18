@@ -19,7 +19,7 @@
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-
+        <script src="js/modernizr-custom.js"></script>
     </head>
     <body>
     <div id="fullpage">
@@ -86,8 +86,9 @@
 
         <div class="section" id="section3">
             <div class="container-fluid">
+                <h2>Distinguished Faculty Members</h2>
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                    <div class="col-lg-3 col-md-3 col-sm-3 card extra-left-margin">
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
@@ -103,7 +104,7 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-3 card">
+                    <div class="col-lg-3 col-md-3 col-sm-3 card extra-left-margin">
 
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
@@ -147,6 +148,7 @@
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="js/dynamics.min.js"></script>
+        <script src="js/classie.js"></script>
         <script>
             //loops through images and applies kenburns effect
             function slideEffect(){
@@ -222,7 +224,8 @@
                         }
 
                         if(index == 4 || anchorLink == 'lastPage') {
-
+                            $.fn.fullpage.setAllowScrolling(true,'up');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                     }
 
@@ -238,21 +241,6 @@
 
             });
 
-            /*function swap_testimonial(){
-                var arr = [];
-                s1 = "\"Education is a simple yet a serious process." +
-                        " It is a process of making a human being into 'being human'." +
-                        " Stress at our institution is on this aspect." +
-                        "I invite you to join us and make our country proud.\"" +
-                        "\n\n  -The Principal";
-
-                s2 = "\"We are all Indians firstly and lastly\" " +
-                        "Whatever anyone else might say, we need to uphold this God-given identity " +
-                        "through our actions, thoughts and what we might say." +
-                        " Long live the Indian Republic.\"" +
-                        "\n\n -The Vice Principal ";
-
-            }*/
 
             function display(){
 
