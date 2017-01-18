@@ -574,14 +574,14 @@ html,body {
     border-radius: 2px;
     display: inline-block;
     height: 220px;
-    margin: 15px 60px 15px 60px;
+    margin: 1% 5% 1% 5%;
     position: relative;
-    width: 180px;
+    width: 13.5%;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
 .extra-left-margin {
-    margin: 15px 60px 15px 80px;
+    margin: 1% 5% 1% 7%;
 }
 
 .section-heading {
