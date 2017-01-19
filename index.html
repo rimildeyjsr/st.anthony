@@ -242,10 +242,10 @@
                 }
             };
 
-            $(window).on('load', function() {
+            /*$(window).on('load', function() {
                 //whenever the page is refreshed it reaches the landing page
                 window.location.hash = '#Page1';
-            });
+            });*/
 
             $('#section1').hide();
             $('#section2').hide();
@@ -295,10 +295,12 @@
                         }
 
                         if(index == 4 || anchorLink == 'Page4') {
+                            $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                         if(index == 5 || anchorLink == 'lastpage') {
+                            $('#section4 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
