@@ -35,8 +35,6 @@
         </div>
 
         <div class="page-one section" id="section1">
-            <img src="images/page-1-hero-image.jpg" alt="school's image" class="page-one-pic">
-
             <div id="slideshow">
                 <img src="images/Campus2.jpg" alt="school pic">
                 <img src="images/bio_lab_optimised.jpg" alt="bio lab pic">
@@ -239,15 +237,15 @@
                 window.location.hash = '#Page1';
             });*/
 
-            $('#section1').hide();
-            $('#section2').hide();
-            $('#section3').hide();
-            $('#section4').hide();
             //variable for animation ends for all vendors required for callback function
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
 
             $(document).ready(function(){
+                $('#section1').hide();
+                $('#section2').hide();
+                $('#section3').hide();
+                $('#section4').hide();
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
                     anchors:['Page1','Page2','Page3','Page4','lastpage'],
