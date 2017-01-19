@@ -288,8 +288,7 @@
                         if(index == 3 || anchorLink == 'Page3'){
                             $('#fp-nav').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
-                                display();
-
+                               display();
                             });
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -319,20 +318,29 @@
 
 
             function display(){
-
-                window.setInterval(display,13000);
-
                 $('.text').each(function () {
+                    console.log(1);
                     var delay = $(this).index();
                     $(this).css('animation-delay', delay*8 + 's');
-                    $(this).addClass('fadeInUpExit');
+                    $(this).addClass('fadeInUpExit').one(animationEnd, function(){
+                        $(this).removeClass('fadeInUpExit');
+                        $(this).css('animation-delay',0+'s');
+                    });
+
                 });
 
                 $('.admin-pic').each(function () {
                     var delay = $(this).index();
                     $(this).css('animation-delay', delay*8 + 's');
-                    $(this).addClass('fadeInDownExit');
+                    $(this).addClass('fadeInDownExit').one(animationEnd, function(){
+                        $(this).removeClass('fadeInDownExit');
+                        $(this).css('animation-delay',0+'s');
+                    });
+
                 });
+                console.log(2);
+                setTimeout(display,16000);
+
             }
 
         </script>

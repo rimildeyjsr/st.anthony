@@ -486,13 +486,14 @@ html,body {
     -o-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
-
+    margin: 0;
     z-index: 10;
     width: 350px;
     height: auto;
-    position: relative;
+    position: absolute;
+    top: 20%;
+    left: 25%;
     max-width: 100%;
-    margin: 10% 10% 10% 37%;
     opacity:0;
 }
 
@@ -677,7 +678,6 @@ html,body {
 
     .text {
         font-size: 1.4em;
-        top:22%;
         width: 80%;
         top :50%;
         left : 10%;
@@ -689,7 +689,8 @@ html,body {
     }
 
     .admin-pic {
-        margin: 0.2% 10% 80% 25% ;
+        top:2%;
+        left: 20%;
         width: 180px;
     }
 
@@ -729,7 +730,8 @@ html,body {
         }
 
         .admin-pic {
-            margin: 10% 8% 10% 42%;
+            top:20%;
+            left: 25%;
             width: 250px ;
         }
 
@@ -769,7 +771,8 @@ html,body {
         }
 
         .admin-pic {
-            margin: 8% 10% 10% 37%;
+            top:20%;
+            left: 25%;
             width: 350px ;
         }
     }
@@ -808,7 +811,8 @@ html,body {
         }
 
         .admin-pic {
-            margin: 8% 10% 10% 37%;
+            top:20%;
+            left: 25%;
             width: 350px ;
         }
 
@@ -848,7 +852,8 @@ html,body {
         }
 
         .admin-pic {
-            margin: 8% 10% 10% 37%;
+            top:20%;
+            left: 25%;
             width: 350px ;
         }
 
@@ -890,7 +895,8 @@ html,body {
         }
 
         .admin-pic {
-            margin: 8% 10% 10% 37%;
+            top:20%;
+            left: 25%;
             width: 350px ;
         }
     }
@@ -929,7 +935,8 @@ html,body {
         }
 
         .admin-pic {
-            margin: 8% 10% 10% 37%;
+            top:0.2%;
+            left: 8%;
             width: 350px ;
         }
 
@@ -969,7 +976,8 @@ html,body {
         }
 
         .admin-pic {
-            margin:8% 10% 10% 37% ;
+            top:1%;
+            left: 5%;
             width: 350px ;
         }
 
