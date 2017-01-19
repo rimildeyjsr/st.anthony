@@ -91,23 +91,23 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 card extra-left-margin">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs M Sinha</h4>
+                        <h6>Faculty of Biology</h6>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs M Francis</h4>
+                        <h6>Faculty of Physics</h6>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs A Khalkho</h4>
+                        <h6>Faculty of Hindi</h6>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs P Verma</h4>
+                        <h6>Faculty of Hindi</h6>
                     </div>
 
                 </div>
@@ -115,23 +115,23 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3 col-sm-3 card extra-left-margin">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs A Kumar</h4>
+                        <h6>Faculty of English</h6>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs A Kenwar</h4>
+                        <h6>Faculty of Geography <br> (Now Retired)</h6>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs M Shrivastav</h4>
+                        <h6>Faculty of Hindi</h6>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card">
                         <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mr C.A Francis</h4>
-                        <h6>Faculty of Mathematics</h6>
+                        <h4>Mrs K Franklin</h4>
+                        <h6>Faculty of Everything <br> (Now Retired)</h6>
                     </div>
                 </div>
             </div>
@@ -318,6 +318,7 @@
 
 
             function display(){
+                console.log(4);
                 $('.text').each(function () {
                     console.log(1);
                     var delay = $(this).index();
@@ -330,6 +331,7 @@
                 });
 
                 $('.admin-pic').each(function () {
+                    console.log(2);
                     var delay = $(this).index();
                     $(this).css('animation-delay', delay*8 + 's');
                     $(this).addClass('fadeInDownExit').one(animationEnd, function(){
@@ -338,7 +340,7 @@
                     });
 
                 });
-                console.log(2);
+                console.log(3);
                 setTimeout(display,16000);
 
             }

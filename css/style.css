@@ -570,12 +570,16 @@ html,body {
 #section3,#section4 {
     background-image: url(../images/landing-page-blurred.jpg);
 }
+
+.container-fluid {
+    height: 100%;
+}
 .card {
     background: #fff;
     border-radius: 3px;
     display: inline-block;
-    height: 220px;
-    margin: 1% 5% 1% 5%;
+    height: 200px;
+    margin: 1% 5% 2% 5%;
     position: relative;
     width: 14%;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
@@ -591,7 +595,7 @@ html,body {
     color: white;
     font-family: "Roboto Mono";
     margin: 0 auto 20px auto;
-    width: 46%;
+    width: 100%;
 }
 
 .card img {
@@ -611,6 +615,7 @@ html,body {
     font-size: 1.15em;
     font-weight: bold;
     text-align: center;
+    margin: 0;
 }
 
 .card h6 {
@@ -618,6 +623,7 @@ html,body {
     text-align: center;
     font-size: 0.68em;
     font-style: italic;
+    margin:4px 0 0 0;
 }
 
 /* media queries */
