@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs-cooke.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Campus2.jpg" afterPath="$PROJECT_DIR$/images/Campus2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Capture.jpg" afterPath="$PROJECT_DIR$/images/Capture.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/bio_lab_optimised.jpg" afterPath="$PROJECT_DIR$/images/bio_lab_optimised.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/class_optimised.jpg" afterPath="$PROJECT_DIR$/images/class_optimised.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/cs_lab.jpg" afterPath="$PROJECT_DIR$/images/cs_lab.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/down-arrow.png" afterPath="$PROJECT_DIR$/images/down-arrow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/kindergarten2.jpg" afterPath="$PROJECT_DIR$/images/kindergarten2.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing-page-blurred.jpg" afterPath="$PROJECT_DIR$/images/landing-page-blurred.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="portfolio.iws" />
@@ -27,8 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5061296">
-              <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.7022767">
+              <caret line="198" column="47" selection-start-line="198" selection-start-column="47" selection-end-line="198" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -691,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5061296">
-          <caret line="67" column="60" selection-start-line="67" selection-start-column="60" selection-end-line="67" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.7022767">
+          <caret line="198" column="47" selection-start-line="198" selection-start-column="47" selection-end-line="198" selection-end-column="47" />
           <folding />
         </state>
       </provider>
