@@ -558,6 +558,8 @@ html,body {
 
 .container-fluid {
     height: 100%;
+    width: 100%;
+    padding : 0;
 }
 .card {
     background: #fff;
