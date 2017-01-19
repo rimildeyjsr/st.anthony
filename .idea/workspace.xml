@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_francis_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_francis_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_kenwar_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_kenwar_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_khalkho_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_khalkho_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_kumar_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_kumar_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_m_sinha_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_m_sinha_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_srivastav_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_srivastav_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_verma_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_verma_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/school-name.png" afterPath="$PROJECT_DIR$/images/school-name.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/the_principal.jpg" afterPath="$PROJECT_DIR$/images/the_principal.jpg" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
