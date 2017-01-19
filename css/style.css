@@ -690,7 +690,7 @@ html,body {
 
     .admin-pic {
         top:2%;
-        left: 20%;
+        left: 25%;
         width: 180px;
     }
 
@@ -719,7 +719,7 @@ html,body {
 
         .text {
             font-size: 1.5em;
-            top: 22%;
+            top: 32%;
             left : 50%;
             width: 40%;
         }
@@ -730,8 +730,8 @@ html,body {
         }
 
         .admin-pic {
-            top:20%;
-            left: 25%;
+            top:0%;
+            left: 8%;
             width: 250px ;
         }
 
@@ -760,9 +760,9 @@ html,body {
 
         .text {
             font-size: 1.6em;
-            top: 22%;
+            top: 28%;
             left : 50%;
-            width: 40%;
+            width: 35%;
         }
 
         .offscreen-logo {
@@ -771,9 +771,9 @@ html,body {
         }
 
         .admin-pic {
-            top:20%;
-            left: 25%;
-            width: 350px ;
+            top:0%;
+            left: 8%;
+            width: 250px ;
         }
     }
     @media screen and (min-width: 755px) {
@@ -800,7 +800,7 @@ html,body {
 
         .text {
             font-size: 1.7em;
-            top: 22%;
+            top: 28%;
             left : 50%;
             width: 40%;
         }
@@ -811,9 +811,9 @@ html,body {
         }
 
         .admin-pic {
-            top:20%;
-            left: 25%;
-            width: 350px ;
+            top:0%;
+            left: 8%;
+            width: 250px ;
         }
 
     }
@@ -841,7 +841,7 @@ html,body {
 
         .text {
             font-size: 1.8em;
-            top: 22%;
+            top: 25%;
             left : 50%;
             width: 40%;
         }
@@ -852,9 +852,9 @@ html,body {
         }
 
         .admin-pic {
-            top:20%;
-            left: 25%;
-            width: 350px ;
+            top:10%;
+            left: 8%;
+            width: 250px ;
         }
 
     }
@@ -884,7 +884,7 @@ html,body {
 
         .text {
             font-size: 1.9em;
-            top: 20%;
+            top: 30%;
             left : 50%;
             width: 40%;
         }
@@ -895,8 +895,8 @@ html,body {
         }
 
         .admin-pic {
-            top:20%;
-            left: 25%;
+            top:0%;
+            left: 8%;
             width: 350px ;
         }
     }
@@ -924,7 +924,7 @@ html,body {
 
         .text {
             font-size: 2em;
-            top:20%;
+            top:30%;
             left : 50%;
             width: 40%;
         }
@@ -935,7 +935,7 @@ html,body {
         }
 
         .admin-pic {
-            top:0.2%;
+            top:0%;
             left: 8%;
             width: 350px ;
         }
@@ -965,7 +965,7 @@ html,body {
 
         .text {
             font-size: 2.55em;
-            top: 20%;
+            top: 30%;
             left : 50%;
             width: 40%;
         }
@@ -976,8 +976,8 @@ html,body {
         }
 
         .admin-pic {
-            top:1%;
-            left: 5%;
+            top:0%;
+            left: 8%;
             width: 350px ;
         }
 
