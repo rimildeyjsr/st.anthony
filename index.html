@@ -299,9 +299,7 @@
 
 
             function display(){
-                console.log(4);
                 $('.text').each(function () {
-                    console.log(1);
                     var delay = $(this).index();
                     $(this).css('animation-delay', delay*8 + 's');
                     $(this).addClass('fadeInUpExit').one(animationEnd, function(){
@@ -312,7 +310,6 @@
                 });
 
                 $('.admin-pic').each(function () {
-                    console.log(2);
                     var delay = $(this).index();
                     $(this).css('animation-delay', delay*8 + 's');
                     $(this).addClass('fadeInDownExit').one(animationEnd, function(){
@@ -321,7 +318,6 @@
                     });
 
                 });
-                console.log(3);
                 setTimeout(display,16000);
 
             }
