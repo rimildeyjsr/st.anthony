@@ -621,6 +621,7 @@ html,body {
 .card h6 {
     font-family: "Roboto Mono";
     text-align: center;
+    font-weight: bold;
     font-size: 0.68em;
     font-style: italic;
     margin:4px 0 0 0;
