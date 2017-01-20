@@ -282,7 +282,7 @@ html,body,.container-fluid {
     position: relative;
     height: 70%;
     top: 45%;
-    right: 10%;
+    right: 5%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 2em;
@@ -310,24 +310,8 @@ html,body,.container-fluid {
     display: block;
     position: relative;
     color: #FFF;
-    letter-spacing: inherit;
     overflow: hidden;
-}
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-    letter-spacing: 8px;
-}
-.overlay ul li a:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    height: 3px;
-    background: #FFF;
-    -webkit-transition: .35s;
-    transition: .35s;
+    text-decoration: none !important;
 }
 
 @-webkit-keyframes fadeInRight {
