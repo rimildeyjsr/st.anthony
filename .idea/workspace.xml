@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_francis_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_kenwar_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_khalkho_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_kumar_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_m_sinha_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_srivastav_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_verma_optimised.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" afterPath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" afterPath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture1_optimised.png" afterPath="$PROJECT_DIR$/images/Picture1_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture2_optimised.png" afterPath="$PROJECT_DIR$/images/Picture2_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture3_optimised.png" afterPath="$PROJECT_DIR$/images/Picture3_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture4_optimised.png" afterPath="$PROJECT_DIR$/images/Picture4_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" afterPath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" afterPath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="" />
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -264,7 +246,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1353" height="735" extended-state="1" />
+    <frame x="0" y="0" width="1353" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24906507" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
