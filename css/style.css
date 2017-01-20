@@ -193,33 +193,6 @@ html,body,.container-fluid {
     margin: 0 auto;
 }
 
-#section1 a {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    color: #FF5252;
-    text-decoration: none;
-    font-size: 20px;
-    overflow: hidden;
-    top: 5px;
-}
-#section1 a:after {
-    content: '';
-    position: absolute;
-    background: #FF5252;
-    height: 2px;
-    width: 0%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    left: 50%;
-    bottom: 0;
-    -webkit-transition: .35s ease;
-    transition: .35s ease;
-}
-#section1 a:hover:after, #section1 a:focus:after, #section1 a:active:after {
-    width: 100%;
-}
-
 .button_container {
     position: absolute;
     top: 5%;
@@ -231,6 +204,7 @@ html,body,.container-fluid {
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease;
 }
+
 .button_container:hover {
     opacity: .7;
 }
@@ -311,7 +285,7 @@ html,body,.container-fluid {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 50px;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Roboto Mono';
     font-weight: 400;
     text-align: center;
 }
