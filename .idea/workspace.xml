@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0001.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0002.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0003.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0004.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0006.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/IMG-20170117-WA0007.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" afterPath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" afterPath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture1_optimised.png" afterPath="$PROJECT_DIR$/images/Picture1_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture2_optimised.png" afterPath="$PROJECT_DIR$/images/Picture2_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture3_optimised.png" afterPath="$PROJECT_DIR$/images/Picture3_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture4_optimised.png" afterPath="$PROJECT_DIR$/images/Picture4_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" afterPath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" afterPath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.9404553">
-              <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+              <caret line="187" column="7" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -672,7 +670,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9404553">
-          <caret line="159" column="26" selection-start-line="159" selection-start-column="26" selection-end-line="159" selection-end-column="26" />
+          <caret line="187" column="7" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
           <folding />
         </state>
       </provider>
