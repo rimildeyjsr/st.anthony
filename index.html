@@ -256,6 +256,7 @@
                 $('#section2').hide();
                 $('#section3').hide();
                 $('#section4').hide();
+                $('#toggle').hide();
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
                     anchors:['Page1','Page2','Page3','Page4','lastpage'],
@@ -272,17 +273,17 @@
                             $('#section2').show();
                             $('#section3').show();
                             $('#section4').show();
+                            $('#toggle').hide();
 
-
+                        }
+                        if (index == 2 || anchorLink == 'Page2'){
+                            $('#fp-nav').show();
+                            $('#toggle').show();
                             $('#toggle').click(function() {
                                 $('#fp-nav').toggle();
                                 $(this).toggleClass('active');
                                 $('#overlay').toggleClass('open');
                             });
-
-                        }
-                        if (index == 2 || anchorLink == 'Page2'){
-                            $('#fp-nav').show();
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
                             }
