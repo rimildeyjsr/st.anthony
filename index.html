@@ -262,9 +262,17 @@
                     anchors:['Page1','Page2','Page3','Page4','lastpage'],
                     navigation: true,
                     navigationPosition: 'right',
+                    fixedElements: '#toggle,#overlay',
 
                     afterLoad : function(anchorLink,index) {
                         //after loading a section, perform these functions
+                        if (index != 1 || anchorLink != 'Page1'){
+                            $('#toggle').click(function() {
+                                $('#fp-nav').toggle();
+                                $(this).toggleClass('active');
+                                $('#overlay').toggleClass('open');
+                            });
+                        }
 
                         if (index == 1 || anchorLink == 'Page1'){
                             //show the other sections now that the page has loaded
@@ -279,11 +287,6 @@
                         if (index == 2 || anchorLink == 'Page2'){
                             $('#fp-nav').show();
                             $('#toggle').show();
-                            $('#toggle').click(function() {
-                                $('#fp-nav').toggle();
-                                $(this).toggleClass('active');
-                                $('#overlay').toggleClass('open');
-                            });
                             if (window.innerWidth < 480) {
                                 $('.school-logo2').fadeIn();
                             }
