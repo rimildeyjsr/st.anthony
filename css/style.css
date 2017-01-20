@@ -16,7 +16,10 @@ html,body,.container-fluid {
 .menu {
     height: 50px;
     width: 50px;
-
+    z-index: 5;
+    position: absolute;
+    right: 5%;
+    top: 8%;
 }
 
 .pageloadscreen {
