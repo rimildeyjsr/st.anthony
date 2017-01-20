@@ -19,7 +19,6 @@
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <script src="js/modernizr-custom.js"></script>
     </head>
 
     <body>
@@ -222,6 +221,7 @@
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
+        <script src="js/modernizr-custom.js"></script>
         <script src="js/dynamics.min.js"></script>
         <script src="js/classie.js"></script>
         <script>
@@ -304,11 +304,13 @@
                         }
 
                         if(index == 4 || anchorLink == 'Page4') {
+                            $('#fp-nav').show();
                             $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                         if(index == 5 || anchorLink == 'lastpage') {
+                            $('#fp-nav').show();
                             $('#section4 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
