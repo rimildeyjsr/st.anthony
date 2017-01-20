@@ -47,7 +47,24 @@
                 <img src="images/page-1-hero-image.jpg" alt="school's image">
                 <img src="images/kindergarten2.jpg" alt="kindergarten">
             </div>
-            <img src="images/icon-mobile-menu.png" alt="menu icon" class="menu">
+
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li ><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
             <img src="images/school-name.png" alt="school name and est year" class="img-responsive school-name animated slideInDown">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo2 animated flipInY">
         </div>
@@ -252,6 +269,12 @@
                             $('#section3').show();
                             $('#section4').show();
 
+
+                            $('#toggle').click(function() {
+                                $(this).toggleClass('active');
+                                $('#overlay').toggleClass('open');
+                            });
+
                         }
                         if (index == 2 || anchorLink == 'Page2'){
                             $('#fp-nav').show();
@@ -260,6 +283,7 @@
                             }
                             $('.school-name').addClass('come-in');
                                 slideEffect();
+
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
