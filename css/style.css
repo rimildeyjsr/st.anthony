@@ -223,7 +223,7 @@ html,body,.container-fluid {
     background: #FFF;
 }
 .button_container span {
-    background: #FF5252;
+    background: #000000;
     border: none;
     height: 5px;
     width: 100%;
@@ -243,7 +243,7 @@ html,body,.container-fluid {
 
 .overlay {
     position: absolute;
-    background: #FF5252;
+    background: #000000;
     top: 0;
     left: 0;
     width: 100%;
@@ -256,7 +256,7 @@ html,body,.container-fluid {
     z-index: 50;
 }
 .overlay.open {
-    opacity: .9;
+    opacity: 0.95;
     visibility: visible;
     height: 100%;
 }
@@ -281,13 +281,15 @@ html,body,.container-fluid {
 .overlay nav {
     position: relative;
     height: 70%;
-    top: 50%;
+    top: 45%;
+    right: 10%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    font-size: 50px;
+    font-size: 2em;
     font-family: 'Roboto Mono';
-    font-weight: 400;
-    text-align: center;
+    font-weight: 100;
+    letter-spacing: 5px;
+    text-align: right;
 }
 .overlay ul {
     list-style: none;
@@ -299,9 +301,8 @@ html,body,.container-fluid {
 }
 .overlay ul li {
     display: block;
-    height: 25%;
-    height: calc(100% / 4);
-    min-height: 50px;
+    height: 15%;
+    min-height: 16px;
     position: relative;
     opacity: 0;
 }
@@ -309,11 +310,11 @@ html,body,.container-fluid {
     display: block;
     position: relative;
     color: #FFF;
-    text-decoration: none;
+    letter-spacing: inherit;
     overflow: hidden;
 }
 .overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-    width: 100%;
+    letter-spacing: 8px;
 }
 .overlay ul li a:after {
     content: '';
