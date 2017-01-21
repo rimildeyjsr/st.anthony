@@ -352,7 +352,7 @@ html,body,.container-fluid {
     }
 
     100% {
-        letter-spacing: 10px;
+        letter-spacing: 7px;
     }
 
 }
@@ -806,13 +806,6 @@ html,body,.container-fluid {
 
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-    .blurred-school-pic .page-one-pic {
-        left: 50%;
-        margin-left: -512px;   /* 50% */
-    }
-}
-
 /*responsive layout*/
 
 
@@ -857,6 +850,11 @@ html,body,.container-fluid {
         width: 180px;
     }
 
+    .overlay nav {
+        font-size: 1em;
+    }
+
+
 }
     @media screen and (min-width: 480px) {
         /* smartphones, Android phones, landscape iPhone */
@@ -898,6 +896,11 @@ html,body,.container-fluid {
             width: 250px ;
         }
 
+        .overlay nav {
+            font-size: 1em;
+        }
+
+
     }
     @media screen and (min-width: 600px) {
         /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
@@ -938,6 +941,11 @@ html,body,.container-fluid {
             left: 8%;
             width: 250px ;
         }
+
+        .overlay nav {
+            font-size: 1.3em;
+        }
+
     }
     @media screen and (min-width: 755px) {
         /*random breakpoint based on design*/
@@ -977,6 +985,10 @@ html,body,.container-fluid {
             top:0%;
             left: 8%;
             width: 250px ;
+        }
+
+        .overlay nav {
+            font-size: 1.6em;
         }
 
     }
@@ -1020,6 +1032,10 @@ html,body,.container-fluid {
             width: 250px ;
         }
 
+        .overlay nav {
+            font-size: 2em;
+        }
+
     }
 
 
@@ -1044,7 +1060,6 @@ html,body,.container-fluid {
             display: none;
         }
 
-
         .text {
             font-size: 1.9em;
             top: 30%;
@@ -1061,6 +1076,10 @@ html,body,.container-fluid {
             top:0%;
             left: 8%;
             width: 350px ;
+        }
+
+        .overlay nav {
+            font-size: 2em;
         }
     }
 
@@ -1103,6 +1122,10 @@ html,body,.container-fluid {
             width: 350px ;
         }
 
+        .overlay nav {
+            font-size: 2em;
+        }
+
     }
 
     @media screen and (min-width: 1281px) {
@@ -1142,6 +1165,10 @@ html,body,.container-fluid {
             top:0%;
             left: 8%;
             width: 350px ;
+        }
+
+        .overlay nav {
+            font-size: 2em;
         }
 
     }
