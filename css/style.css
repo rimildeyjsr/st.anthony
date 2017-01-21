@@ -845,7 +845,7 @@ html,body,.container-fluid {
     }
 
     .admin-pic {
-        top:2%;
+        top:1%;
         left: 25%;
         width: 180px;
     }
@@ -891,7 +891,7 @@ html,body,.container-fluid {
         }
 
         .admin-pic {
-            top:0%;
+            top:10%;
             left: 8%;
             width: 250px ;
         }
@@ -937,7 +937,7 @@ html,body,.container-fluid {
         }
 
         .admin-pic {
-            top:0%;
+            top:10%;
             left: 8%;
             width: 250px ;
         }
@@ -982,7 +982,7 @@ html,body,.container-fluid {
         }
 
         .admin-pic {
-            top:0%;
+            top:10%;
             left: 8%;
             width: 250px ;
         }
