@@ -257,6 +257,11 @@
                 $('#section3').hide();
                 $('#section4').hide();
                 $('#toggle').hide();
+                $('#toggle').click(function() {
+                    $('#toggle').toggleClass('active');
+                    $('#overlay').toggleClass('open');
+                    $('#fp-nav').toggle();
+                });
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
                     anchors:['Page1','Page2','Page3','Page4','lastpage'],
@@ -266,13 +271,6 @@
 
                     afterLoad : function(anchorLink,index) {
                         //after loading a section, perform these functions
-                        if (index != 1 || anchorLink != 'Page1'){
-                            $('#toggle').click(function() {
-                                $('#fp-nav').toggle();
-                                $(this).toggleClass('active');
-                                $('#overlay').toggleClass('open');
-                            });
-                        }
 
                         if (index == 1 || anchorLink == 'Page1'){
                             //show the other sections now that the page has loaded
@@ -299,6 +297,7 @@
 
                         if(index == 3 || anchorLink == 'Page3'){
                             $('#fp-nav').show();
+                            $('#toggle').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
                                display();
                             });
@@ -308,12 +307,19 @@
 
                         if(index == 4 || anchorLink == 'Page4') {
                             $('#fp-nav').show();
+                            $('#toggle').show();
                             $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                         if(index == 5 || anchorLink == 'lastpage') {
                             $('#fp-nav').show();
+                            $('#toggle').show();
+                            $('#toggle').click(function() {
+                                $('#fp-nav').toggle();
+                                $('#toggle').toggleClass('active');
+                                $('#overlay').toggleClass('open');
+                            });
                             $('#section4 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
