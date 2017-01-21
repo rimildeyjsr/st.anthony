@@ -337,27 +337,22 @@ html,body,.container-fluid {
     }
 }
 
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
-
+.overlay ul li a:hover, .overlay ul li a:focus, .overlay ul li a:active {
+    -webkit-animation: space-up 0.5s ease-out forwards;
+    -o-animation:  space-up 0.5s ease-out forwards;
+    -moz-animation: space-up 0.5s ease-out forwards;
+    -ms-animation:space-up 0.5s ease-out forwards;
+    animation:  space-up 0.5s ease-out forwards;
 }
 
-.overlay ul li a:after {
-    -webkit-animation: space-up  ;
-    -o-animation:  space-up;
-    animation:  space-up;
-}
 
 @keyframes space-up {
     0% {
         letter-spacing: 5px;
     }
 
-    50% {
-        letter-spacing: 7px;
-    }
-
     100% {
-        letter-spacing: 9px;
+        letter-spacing: 10px;
     }
 
 }
