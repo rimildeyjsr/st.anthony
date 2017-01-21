@@ -1077,6 +1077,19 @@ html,body,.container-fluid {
             left: 8%;
             width: 350px ;
         }
+        .card img {
+            width: 75%;
+            margin: 8% auto 35% auto;
+        }
+
+        .card h4 {
+            font-size: 1.15em;
+        }
+
+        .card h6 {
+            font-size: 0.68em;
+            margin:4px 0 0 0;
+        }
 
         .overlay nav {
             font-size: 2em;
@@ -1122,6 +1135,20 @@ html,body,.container-fluid {
             width: 350px ;
         }
 
+        .card img {
+            width: 75%;
+            margin: 8% auto 35% auto;
+        }
+
+        .card h4 {
+            font-size: 1.15em;
+        }
+
+        .card h6 {
+            font-size: 0.68em;
+            margin:4px 0 0 0;
+        }
+
         .overlay nav {
             font-size: 2em;
         }
@@ -1165,6 +1192,20 @@ html,body,.container-fluid {
             top:0%;
             left: 8%;
             width: 350px ;
+        }
+
+        .card img {
+            width: 70%;
+            margin: 8% auto 25% auto;
+        }
+
+        .card h4 {
+            font-size: 1.15em;
+        }
+
+        .card h6 {
+            font-size: 0.68em;
+            margin:4px 0 0 0;
         }
 
         .overlay nav {
