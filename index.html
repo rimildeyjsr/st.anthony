@@ -26,7 +26,7 @@
         <div class="page-load-screen section active" id="section0">
             <img src="images/logo-color-raster-500x500.png" alt="school logo" class="img-responsive school-logo animated flipInY">
             <img src="images/landing-page-blurred.jpg" alt="blurred image of the school" class="img-responsive blurred-school-pic">
-            <a href="#Page2">
+            <a href="#home">
                 <img src="images/down-arrow.png" alt="down arrow for navigation" class="img-responsive down-arrow animated slideInDown">
             </a>
             <div class="ring_add"></div>
@@ -56,10 +56,10 @@
             <div class="overlay" id="overlay">
                 <nav class="overlay-menu">
                     <ul>
-                        <li ><a href="#">HOME</a></li>
-                        <li><a href="#">FROM THE ADMINISTRATION'S DESK</a></li>
-                        <li><a href="#">DISTINGUISHED FACULTY MEMBERS</a></li>
-                        <li><a href="#">HELPING STAFF</a></li>
+                        <li ><a href="#home">HOME</a></li>
+                        <li><a href="#administration_page">FROM THE ADMINISTRATION'S DESK</a></li>
+                        <li><a href="#faculty_section">DISTINGUISHED FACULTY MEMBERS</a></li>
+                        <li><a href="#staff_section">HELPING STAFF</a></li>
                         <li><a href="#">WORDS FROM OUR FOUNDER</a></li>
                         <li><a href="#">IN OUR MEMORY</a>
                         <li><a href="#">ALUMNI</a>
@@ -264,9 +264,14 @@
                     $('#overlay').toggleClass('open');
                     $('#fp-nav').toggle();
                 });
+                $('#overlay ul li a').click(function() {
+                    $('#toggle').toggleClass('active');
+                    $('#overlay').toggleClass('open');
+                    $('#fp-nav').toggle();
+                });
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
-                    anchors:['Page1','Page2','Page3','Page4','lastpage'],
+                    anchors:['welcome','home','administration_page','faculty_section','staff_section'],
                     navigation: true,
                     navigationPosition: 'right',
                     fixedElements: '#toggle,#overlay',
@@ -274,7 +279,7 @@
                     afterLoad : function(anchorLink,index) {
                         //after loading a section, perform these functions
 
-                        if (index == 1 || anchorLink == 'Page1'){
+                        if (index == 1 || anchorLink == 'welcome'){
                             //show the other sections now that the page has loaded
                             $('#fp-nav').hide();
                             $('#section1').show();
@@ -284,7 +289,7 @@
                             $('#toggle').hide();
 
                         }
-                        if (index == 2 || anchorLink == 'Page2'){
+                        if (index == 2 || anchorLink == 'home'){
                             $('#fp-nav').show();
                             $('#toggle').show();
                             if (window.innerWidth < 480) {
@@ -297,7 +302,7 @@
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
                         }
 
-                        if(index == 3 || anchorLink == 'Page3'){
+                        if(index == 3 || anchorLink == 'administration_page'){
                             $('#fp-nav').show();
                             $('#toggle').show();
                             $('.offscreen-logo').addClass('come-in-logo').one(animationEnd,function(){
@@ -307,14 +312,14 @@
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
 
-                        if(index == 4 || anchorLink == 'Page4') {
+                        if(index == 4 || anchorLink == 'faculty_section') {
                             $('#fp-nav').show();
                             $('#toggle').show();
                             $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
-                        if(index == 5 || anchorLink == 'lastpage') {
+                        if(index == 5 || anchorLink == 'staff_section') {
                             $('#fp-nav').show();
                             $('#toggle').show();
                             $('#toggle').click(function() {
