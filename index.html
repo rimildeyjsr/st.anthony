@@ -315,6 +315,7 @@
                         if(index == 4 || anchorLink == 'faculty_section') {
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $('#section3 .section-heading').addClass('animated fadeInDown');
                             $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -322,11 +323,7 @@
                         if(index == 5 || anchorLink == 'staff_section') {
                             $('#fp-nav').show();
                             $('#toggle').show();
-                            $('#toggle').click(function() {
-                                $('#fp-nav').toggle();
-                                $('#toggle').toggleClass('active');
-                                $('#overlay').toggleClass('open');
-                            });
+                            $('#section4 .section-heading').addClass('animated fadeInDown');
                             $('#section4 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');

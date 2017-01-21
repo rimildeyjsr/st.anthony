@@ -752,6 +752,7 @@ html,body,.container-fluid {
     font-family: "Roboto Mono",sans-serif;
     margin: 0 auto 20px auto;
     width: 100%;
+    opacity: 0;
 }
 
 .card img {
