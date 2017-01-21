@@ -223,7 +223,7 @@ html,body,.container-fluid {
     background: #FFF;
 }
 .button_container span {
-    background: #000000;
+    background: #ffffff;
     border: none;
     height: 5px;
     width: 100%;
@@ -314,6 +314,7 @@ html,body,.container-fluid {
     text-decoration: none !important;
 }
 
+
 @-webkit-keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -334,6 +335,31 @@ html,body,.container-fluid {
         opacity: 1;
         left: 0;
     }
+}
+
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+
+}
+
+.overlay ul li a:after {
+    -webkit-animation: space-up  ;
+    -o-animation:  space-up;
+    animation:  space-up;
+}
+
+@keyframes space-up {
+    0% {
+        letter-spacing: 5px;
+    }
+
+    50% {
+        letter-spacing: 7px;
+    }
+
+    100% {
+        letter-spacing: 9px;
+    }
+
 }
 
 .come-in {
