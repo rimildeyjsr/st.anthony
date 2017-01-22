@@ -19,7 +19,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" href="css/component.css" />
         <link href="css/style.css" rel="stylesheet">
     </head>
 
@@ -87,7 +87,7 @@
                         <br><br>-The Principal
                     </p>
                     <p class="text" id="vice-principal">
-                        "We are all Indians firstly and lastly.Whatever anyone else might say, we need to uphold this God-given identity
+                        "We are all Indians firstly and lastly. Whatever anyone else might say, we need to uphold this God-given identity
                         through our actions, thoughts and what we might say.<br>
                         Long live the Indian Republic."
                         <br><br> -The Vice Principal
@@ -155,21 +155,38 @@
                 </div>
             </div>
 
-            <!--<div class="stack-card">
-                <h2 class="content__title">Yuda</h2>
+            <div class="stack-card">
                 <ul id="stack_yuda" class="stack stack--yuda">
-                    <li class="stack__item"><img src="images/mrs_srivastav_optimised.png" alt="faculty" /></li>
-                    <li class="stack__item"><img src="images/mrs_kenwar_optimised.png" alt="faculty" /></li>
-                    <li class="stack__item"><img src="images/mrs_kumar_optimised.png" alt="faculty" /></li>
-                    <li class="stack__item"><img src="images/mrs_francis_optimised.png" alt="faculty" /></li>
-                    <li class="stack__item"><img src="images/mrs_khalkho_optimised.png" alt="faculty" /></li>
-                    <li class="stack__item"><img src="images/mrs_m_sinha_optimised.png" alt="faculty" /></li>
+                    <li class="stack__item">
+                        <img src="images/mrs_srivastav_optimised.png" alt="faculty" />
+                        <h4>Mrs Srivastav</h4> <br><p> Faculty Of Hindi </p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_kenwar_optimised.png" alt="faculty" />
+                        <h4>Mrs A Kenwar </h4> <br><p> Faculty Of Geography <br> (Now retired) </p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_kumar_optimised.png" alt="faculty" />
+                        <h4>Mrs A Kumar </h4> <br><p> Faculty Of English </p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_francis_optimised.png" alt="faculty" />
+                        <h4>Mrs M Francis </h4> <br><p> Faculty Of Geography <p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_khalkho_optimised.png" alt="faculty" />
+                        <h4>Mrs A Khalko </h4> <br><p> Faculty Of Hindi </p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_m_sinha_optimised.png" alt="faculty" />
+                        <h4>Mrs M Sinha </h4> <br><p> Faculty Of Hindi </p>
+                    </li>
                 </ul>
                 <div class="controls">
                     <button class="button button--sonar button--reject" data-stack="stack_yuda"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
                     <button class="button button--sonar button--accept" data-stack="stack_yuda"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
                 </div>
-            </div>-->
+            </div>
         </div>
 
         <div class="section" id="section4">
@@ -327,6 +344,9 @@
                             $('#fp-nav').show();
                             $('#toggle').show();
                             $('#section3 .section-heading').addClass('animated fadeInDown');
+                            if (window.innerWidth < 600) {
+                                $('.stack-card').fadeIn();
+                            }
                             $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
