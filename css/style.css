@@ -734,7 +734,7 @@ html,body,.container-fluid {
     border-radius: 3px;
     display: inline-block;
     /*height: 16em;*/
-    margin: 3% 3% 2% 3%;
+    margin: 2% 3% 2% 3%;
     position: relative;
     width: 13%;
     opacity: 0;
@@ -752,7 +752,7 @@ html,body,.container-fluid {
 }
 
 .extra-left-margin {
-    margin: 3% 3% 2% 14%;
+    margin: 2% 3% 2% 14%;
 }
 
 .extra-left-margin-less-top {
