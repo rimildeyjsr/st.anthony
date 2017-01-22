@@ -740,7 +740,7 @@ html,body,.container-fluid {
     top: 24%;
     z-index: 5;
     margin: 0 auto;
-    display: none;
+    opacity: 0;
 }
 
 .stack-card ul li img {
