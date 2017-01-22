@@ -759,12 +759,13 @@ html,body,.container-fluid {
     text-align: center;
     background-color: #4f2500;
     color: white;
-    font-family: "Roboto Mono",sans-serif;
+    font-family: "Roboto Mono",monospace;
     margin: 0 auto 20px auto;
     width: 100%;
     height: 40px;
     opacity: 0;
     position: relative;
+    font-weight: normal;
 }
 
 .card img {
