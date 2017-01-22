@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" afterPath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" afterPath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture1_optimised.png" afterPath="$PROJECT_DIR$/images/Picture1_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture2_optimised.png" afterPath="$PROJECT_DIR$/images/Picture2_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture3_optimised.png" afterPath="$PROJECT_DIR$/images/Picture3_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Picture4_optimised.png" afterPath="$PROJECT_DIR$/images/Picture4_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" afterPath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" afterPath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_francis_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_francis_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_kenwar_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_kenwar_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_khalkho_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_khalkho_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_kumar_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_kumar_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_m_sinha_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_m_sinha_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_srivastav_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_srivastav_optimised.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_verma_optimised.png" afterPath="$PROJECT_DIR$/images/mrs_verma_optimised.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.029310346">
-              <caret line="126" column="2" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="2" />
+              <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -52,8 +36,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="738" column="13" selection-start-line="738" selection-start-column="13" selection-end-line="738" selection-end-column="13" />
+            <state vertical-scroll-proportion="-11.192307">
+              <caret line="286" column="32" selection-start-line="286" selection-start-column="32" selection-end-line="286" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -678,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="738" column="13" selection-start-line="738" selection-start-column="13" selection-end-line="738" selection-end-column="13" />
+        <state vertical-scroll-proportion="-11.192307">
+          <caret line="286" column="32" selection-start-line="286" selection-start-column="32" selection-end-line="286" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -687,7 +671,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029310346">
-          <caret line="126" column="2" selection-start-line="126" selection-start-column="2" selection-end-line="126" selection-end-column="2" />
+          <caret line="115" column="49" selection-start-line="115" selection-start-column="49" selection-end-line="115" selection-end-column="49" />
           <folding />
         </state>
       </provider>

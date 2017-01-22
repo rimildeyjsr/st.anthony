@@ -281,8 +281,8 @@ html,body,.container-fluid {
 .overlay nav {
     position: relative;
     height: 75%;
-    top: 45%;
-    right: 5%;
+    top: 50%;
+    right: 6%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     font-size: 2em;
