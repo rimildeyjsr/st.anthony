@@ -195,7 +195,7 @@ html,body,.container-fluid {
 
 .button_container {
     position: absolute;
-    top: 7%;
+    top: 8%;
     right: 2%;
     height: 27px;
     width: 35px;
@@ -280,7 +280,7 @@ html,body,.container-fluid {
 }
 .overlay nav {
     position: relative;
-    height: 70%;
+    height: 75%;
     top: 45%;
     right: 5%;
     -webkit-transform: translateY(-50%);
@@ -734,16 +734,26 @@ html,body,.container-fluid {
     border-radius: 3px;
     display: inline-block;
     height: 220px;
-    margin: 1% 5% 2% 5%;
+    margin: 3% 3% 2% 3%;
     position: relative;
-    width: 14%;
+    width: 13%;
     opacity: 0;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-.extra-left-margin {
-    margin: 1% 5% 1% 7%;
+.less-top-margin {
+    margin: 1% 3% 2% 3%;
+
 }
+
+.extra-left-margin {
+    margin: 3% 3% 2% 14%;
+}
+
+.extra-left-margin-less-top {
+    margin: 1% 3% 2% 14%;
+}
+
 
 .section-heading {
     text-align: center;
@@ -784,6 +794,7 @@ html,body,.container-fluid {
     font-weight: 500;
     font-style: italic;
     margin:4px 0 0 0;
+    line-height:1.5 ;
 }
 
 /* media queries */
