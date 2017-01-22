@@ -727,6 +727,9 @@ html,body,.container-fluid {
 
 #section3,#section4 {
     background-image: url(../images/landing-page-blurred.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .card {
