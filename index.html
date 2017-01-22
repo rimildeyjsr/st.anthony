@@ -171,7 +171,7 @@
                     </li>
                     <li class="stack__item">
                         <img src="images/mrs_francis_optimised.png" alt="faculty" />
-                        <h4>Mrs M Francis </h4> <br><p> Faculty Of Geography <p>
+                        <h4>Mrs M Francis </h4> <br><p> Faculty Of Physics <p>
                     </li>
                     <li class="stack__item">
                         <img src="images/mrs_khalkho_optimised.png" alt="faculty" />
@@ -179,7 +179,11 @@
                     </li>
                     <li class="stack__item">
                         <img src="images/mrs_m_sinha_optimised.png" alt="faculty" />
-                        <h4>Mrs M Sinha </h4> <br><p> Faculty Of Hindi </p>
+                        <h4>Mrs M Sinha </h4> <br><p> Faculty Of Biology </p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_verma_optimised.png" alt="faculty" />
+                        <h4>Mrs P Verma </h4> <br><p> Faculty Of Hindi </p>
                     </li>
                 </ul>
                 <div class="controls">
@@ -239,7 +243,48 @@
                     </div>
                 </div>
             </div>
+            <div class="stack-card">
+                <ul id="stack_yuda_1" class="stack stack--yuda">
+                    <li class="stack__item">
+                        <img src="images/Deepak_Bhaiya_optimised.png" alt="helping staff" />
+                        <h4>Deepak Bhaiya</h4>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/Monica_Didi_optimised.png" alt="helping staff" />
+                        <h4>Monica Didi</h4>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/Sudhir_Bhaiya_optimised.png" alt="helping staff" />
+                        <h4>Sudhir Bhaiya </h4>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/Sunita_Didi_optimised.png" alt="helping staff" />
+                        <h4>Sunita Didi </h4>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/Picture1_optimised.png" alt="helping staff" />
+                        <h4>Horo Bhaiya </h4>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/Picture2_optimised.png" alt="helping staff" />
+                        <h4>Jeevan Bhaiya </h4>
+                    </li>
 
+                    <li class="stack__item">
+                        <img src="images/Picture3_optimised.png" alt="helping staff" />
+                        <h4>Chander Bhaiya </h4>
+                    </li>
+
+                    <li class="stack__item">
+                        <img src="images/Picture4_optimised.png" alt="helping staff" />
+                        <h4>Pradeep Bhaiya </h4>
+                    </li>
+                </ul>
+                <div class="controls">
+                    <button class="button button--sonar button--reject" data-stack="stack_yuda_1"><i class="fa fa-times"></i><span class="text-hidden">Reject</span></button>
+                    <button class="button button--sonar button--accept" data-stack="stack_yuda_1"><i class="fa fa-check"></i><span class="text-hidden">Accept</span></button>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -345,7 +390,7 @@
                             $('#toggle').show();
                             $('#section3 .section-heading').addClass('animated fadeInDown');
                             if (window.innerWidth < 1025) {
-                                $('.stack-card').addClass('animated fadeInUp');
+                                $('#section3 .stack-card').addClass('animated fadeInUp');
                             }
                             $('#section3 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
@@ -355,6 +400,9 @@
                             $('#fp-nav').show();
                             $('#toggle').show();
                             $('#section4 .section-heading').addClass('animated fadeInDown');
+                            if (window.innerWidth < 1025) {
+                                $('#section4 .stack-card').addClass('animated fadeInUp');
+                            }
                             $('#section4 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
@@ -446,6 +494,7 @@
         (function() {
 
             var yuda = new Stack(document.getElementById('stack_yuda'));
+            var yuda1 = new Stack(document.getElementById('stack_yuda_1'));
             // controls the click ring effect on the button
             var buttonClickCallback = function(bttn) {
                 var bttn = bttn || this;
@@ -454,6 +503,9 @@
 
             document.querySelector('.button--accept[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.accept(buttonClickCallback.bind(this)); });
             document.querySelector('.button--reject[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.reject(buttonClickCallback.bind(this)); });
+
+            document.querySelector('.button--accept[data-stack = stack_yuda_1]').addEventListener(clickeventtype, function() { yuda1.accept(buttonClickCallback.bind(this)); });
+            document.querySelector('.button--reject[data-stack = stack_yuda_1]').addEventListener(clickeventtype, function() { yuda1.reject(buttonClickCallback.bind(this)); });
 
             [].slice.call(document.querySelectorAll('.button--sonar')).forEach(function(bttn) {
                 bttn.addEventListener(clickeventtype, function() {
