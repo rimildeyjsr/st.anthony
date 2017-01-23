@@ -737,7 +737,7 @@ html,body,.container-fluid {
     height: auto;
     left: 0;
     right: 0;
-    top: 24%;
+    top: 22%;
     z-index: 5;
     margin: 0 auto;
     opacity: 0;
@@ -915,6 +915,7 @@ html,body,.container-fluid {
 
     .section-heading {
         font-size: 1.3em;
+        padding-top: 2%;
     }
 
     .card {
@@ -972,6 +973,7 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 1.5em;
+            padding-top: 2%;
         }
 
         .card {
@@ -1037,6 +1039,7 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 2em;
+            padding-top: 0;
         }
 
     }
@@ -1094,6 +1097,7 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 2em;
+            padding-top: 0;
         }
     }
     @media screen and (min-width: 801px) {
@@ -1150,6 +1154,7 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 2em;
+            padding-top: 0;
         }
 
     }
@@ -1221,6 +1226,7 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 2em;
+            padding-top: 0;
         }
     }
 
@@ -1291,6 +1297,7 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 2em;
+            padding-top: 0;
         }
     }
 
@@ -1361,5 +1368,6 @@ html,body,.container-fluid {
 
         .section-heading {
             font-size: 2em;
+            padding-top: 0;
         }
     }
