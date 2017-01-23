@@ -312,6 +312,7 @@ html,body,.container-fluid {
     color: #FFF;
     overflow: hidden;
     text-decoration: none !important;
+    font-weight: normal;
 }
 
 
@@ -349,10 +350,12 @@ html,body,.container-fluid {
 @keyframes space-up {
     0% {
         letter-spacing: 5px;
+        font-weight: normal;
     }
 
     100% {
         letter-spacing: 7px;
+        font-weight: bold;
     }
 
 }
