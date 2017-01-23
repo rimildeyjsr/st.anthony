@@ -504,36 +504,6 @@ html,body,.container-fluid {
     transition-duration:3s, 45s;
 }
 
-#slideshow img {
-    -webkit-transform-origin: bottom left;
-    -moz-transform-origin: bottom left;
-    -ms-transform-origin: bottom left;
-    -o-transform-origin: bottom left;
-    transform-origin: bottom left;
-}
-
-#slideshow img:nth-child(2n+1) {
-    -webkit-transform-origin: top right;
-    -moz-transform-origin: top right;
-    -ms-transform-origin: top right;
-    -o-transform-origin: top right;
-    transform-origin: top right;
-}
-
-#slideshow img:nth-child(3n+1) {
-    -webkit-transform-origin: top left;
-    -moz-transform-origin: top left;
-    -ms-transform-origin: top left;
-    -o-transform-origin: top left;
-    transform-origin: top left;
-}
-#slideshow img:nth-child(4n+1) {
-    -webkit-transform-origin: bottom right;
-    -moz-transform-origin: bottom right;
-    -ms-transform-origin: bottom right;
-    -o-transform-origin: bottom right;
-    transform-origin: bottom right;
-}
 
 /**
  * Because of the stacking context, we need to make sure that the first image (in source) is not hidden by the last one.
@@ -929,6 +899,14 @@ html,body,.container-fluid {
         display: block;
     }
 
+    #slideshow img {
+        -webkit-transform-origin: top right;
+        -moz-transform-origin: top right;
+        -ms-transform-origin: top right;
+        -o-transform-origin: top right;
+        transform-origin: top right;
+    }
+
 }
     @media screen and (min-width: 480px) {
         /* smartphones, Android phones, landscape iPhone */
@@ -986,6 +964,38 @@ html,body,.container-fluid {
         .stack-card {
             display: block;
         }
+
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
 
     }
     @media screen and (min-width: 600px) {
@@ -1045,6 +1055,38 @@ html,body,.container-fluid {
             padding-top: 0;
         }
 
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
+
     }
     @media screen and (min-width: 755px) {
         /*random breakpoint based on design*/
@@ -1102,6 +1144,38 @@ html,body,.container-fluid {
             font-size: 2em;
             padding-top: 0;
         }
+
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
     }
     @media screen and (min-width: 801px) {
         /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -1159,6 +1233,38 @@ html,body,.container-fluid {
             font-size: 2em;
             padding-top: 0;
         }
+
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
 
     }
 
@@ -1231,6 +1337,38 @@ html,body,.container-fluid {
             font-size: 2em;
             padding-top: 0;
         }
+
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
     }
 
     @media screen and (min-width: 1025px) {
@@ -1302,6 +1440,38 @@ html,body,.container-fluid {
             font-size: 2em;
             padding-top: 0;
         }
+
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
+        }
+
     }
 
     @media screen and (min-width: 1281px) {
@@ -1315,6 +1485,37 @@ html,body,.container-fluid {
             height: 80px;
             width: 80px;
             top: 81.5%;
+        }
+
+        #slideshow img {
+            -webkit-transform-origin: bottom left;
+            -moz-transform-origin: bottom left;
+            -ms-transform-origin: bottom left;
+            -o-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+
+        #slideshow img:nth-child(2n+1) {
+            -webkit-transform-origin: top right;
+            -moz-transform-origin: top right;
+            -ms-transform-origin: top right;
+            -o-transform-origin: top right;
+            transform-origin: top right;
+        }
+
+        #slideshow img:nth-child(3n+1) {
+            -webkit-transform-origin: top left;
+            -moz-transform-origin: top left;
+            -ms-transform-origin: top left;
+            -o-transform-origin: top left;
+            transform-origin: top left;
+        }
+        #slideshow img:nth-child(4n+1) {
+            -webkit-transform-origin: bottom right;
+            -moz-transform-origin: bottom right;
+            -ms-transform-origin: bottom right;
+            -o-transform-origin: bottom right;
+            transform-origin: bottom right;
         }
 
         .school-name {
