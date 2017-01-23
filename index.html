@@ -187,7 +187,7 @@
                     </li>
                 </ul>
                 <div class="controls">
-                    <button class="button button--sonar button--reject" data-stack="stack_yuda"><i class="fa fa-arrow-left"></i><span class="text-hidden">Reject</span></button>
+                    <!--<button class="button button--sonar button--reject" data-stack="stack_yuda"><i class="fa fa-arrow-left"></i><span class="text-hidden">Reject</span></button>-->
                     <button class="button button--sonar button--accept" data-stack="stack_yuda"><i class="fa fa-arrow-right"></i><span class="text-hidden">Accept</span></button>
                 </div>
             </div>
@@ -281,7 +281,7 @@
                     </li>
                 </ul>
                 <div class="controls">
-                    <button class="button button--sonar button--reject" data-stack="stack_yuda_1"><i class="fa fa-arrow-left"></i><span class="text-hidden">Reject</span></button>
+                    <!--<button class="button button--sonar button--reject" data-stack="stack_yuda_1"><i class="fa fa-arrow-left"></i><span class="text-hidden">Reject</span></button>-->
                     <button class="button button--sonar button--accept" data-stack="stack_yuda_1"><i class="fa fa-arrow-right"></i><span class="text-hidden">Accept</span></button>
                 </div>
             </div>
@@ -503,10 +503,10 @@
             };
 
             document.querySelector('.button--accept[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.accept(buttonClickCallback.bind(this)); });
-            document.querySelector('.button--reject[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.reject(buttonClickCallback.bind(this)); });
+            //document.querySelector('.button--reject[data-stack = stack_yuda]').addEventListener(clickeventtype, function() { yuda.reject(buttonClickCallback.bind(this)); });
 
             document.querySelector('.button--accept[data-stack = stack_yuda_1]').addEventListener(clickeventtype, function() { yuda1.accept(buttonClickCallback.bind(this)); });
-            document.querySelector('.button--reject[data-stack = stack_yuda_1]').addEventListener(clickeventtype, function() { yuda1.reject(buttonClickCallback.bind(this)); });
+            //document.querySelector('.button--reject[data-stack = stack_yuda_1]').addEventListener(clickeventtype, function() { yuda1.reject(buttonClickCallback.bind(this)); });
 
             [].slice.call(document.querySelectorAll('.button--sonar')).forEach(function(bttn) {
                 bttn.addEventListener(clickeventtype, function() {
