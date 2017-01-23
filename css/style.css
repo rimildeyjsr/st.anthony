@@ -807,6 +807,7 @@ html,body,.container-fluid {
     opacity: 0;
     position: relative;
     font-weight: normal;
+    font-size: 2em;
 }
 
 .card img {
@@ -912,6 +913,9 @@ html,body,.container-fluid {
         font-size: 1em;
     }
 
+    .section-heading {
+        font-size: 1.3em;
+    }
 
     .card {
         display: none;
@@ -964,6 +968,10 @@ html,body,.container-fluid {
 
         .overlay nav {
             font-size: 1em;
+        }
+
+        .section-heading {
+            font-size: 1.5em;
         }
 
         .card {
@@ -1027,6 +1035,9 @@ html,body,.container-fluid {
             display: none;
         }
 
+        .section-heading {
+            font-size: 2em;
+        }
 
     }
     @media screen and (min-width: 755px) {
@@ -1081,7 +1092,9 @@ html,body,.container-fluid {
             display: none;
         }
 
-
+        .section-heading {
+            font-size: 2em;
+        }
     }
     @media screen and (min-width: 801px) {
         /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -1133,6 +1146,10 @@ html,body,.container-fluid {
 
         .card {
             display: none;
+        }
+
+        .section-heading {
+            font-size: 2em;
         }
 
     }
@@ -1201,6 +1218,10 @@ html,body,.container-fluid {
         .card {
             display: none;
         }
+
+        .section-heading {
+            font-size: 2em;
+        }
     }
 
     @media screen and (min-width: 1025px) {
@@ -1267,6 +1288,10 @@ html,body,.container-fluid {
         .card {
             display: block;
         }
+
+        .section-heading {
+            font-size: 2em;
+        }
     }
 
     @media screen and (min-width: 1281px) {
@@ -1332,5 +1357,9 @@ html,body,.container-fluid {
 
         .card {
             display: block;
+        }
+
+        .section-heading {
+            font-size: 2em;
         }
     }
