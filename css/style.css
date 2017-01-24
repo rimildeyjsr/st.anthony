@@ -351,11 +351,15 @@ html,body,.container-fluid {
     0% {
         letter-spacing: 5px;
         font-weight: normal;
+        color: white;
+        text-decoration: none;
     }
 
     100% {
         letter-spacing: 7px;
-        font-weight: bold;
+        font-weight: bolder;
+        color: #ffff66;
+        text-decoration: line-through;
     }
 
 }
