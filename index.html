@@ -148,9 +148,9 @@
                         <br>
                     </div>
                     <div class="col-lg-3 col-md-3 col-sm-3 card less-top-margin less-padding">
-                        <img src="images/the_principal.jpg" alt="faculty">
-                        <h4>Mrs K Franklin</h4>
-                        <h6>Faculty of Everything <br> (Now Retired)</h6>
+                        <img src="images/mrs_banwar.png" alt="faculty">
+                        <h4>Mrs S Banwar</h4>
+                        <h6>Faculty of English <br> (Now Retired)</h6>
                     </div>
                 </div>
             </div>
@@ -184,6 +184,10 @@
                     <li class="stack__item">
                         <img src="images/mrs_verma_optimised.png" alt="faculty" />
                         <h4>Mrs P Verma </h4> <br><p> Faculty Of Hindi </p>
+                    </li>
+                    <li class="stack__item">
+                        <img src="images/mrs_banwar.png" alt="faculty" />
+                        <h4>Mrs S Banwar </h4> <br><p> Faculty Of English <br> (Now retired) </p>
                     </li>
                 </ul>
                 <div class="controls">
@@ -444,10 +448,14 @@
                             $('#fp-nav').show();
                             $('#toggle').show();
                             slideEffect('slideshow_2');
+                            $.fn.fullpage.setAllowScrolling(true,'up');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                         if(index == 7 || anchorLink == 'memory_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            $.fn.fullpage.setAllowScrolling(true,'up');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
                     }
 
