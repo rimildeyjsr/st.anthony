@@ -829,12 +829,42 @@ html,body,.container-fluid {
     background-size: cover;
 }
 
-#section6 h2 {
+#section6 h3 {
     color: #4f2500;
     font-size: 4em;
-    font-family: "Roboto Mono", monospace;
+    font-family: 'Times New Roman';
+    font-style: italic;
     text-align: center;
 }
+
+.wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    text-align: justify;
+    color: #ffffff;
+    animation: 60s credits linear infinite;
+    z-index: 100;
+}
+
+.wrapper h4 {
+    font-size: 3em;
+    color: #4f2500;
+}
+
+@keyframes credits {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -500%;
+    }
+}
+
 /* media queries */
 
 @media screen and (max-width: 480px) {
