@@ -813,7 +813,7 @@ html,body,.container-fluid {
     line-height:1.85 ;
 }
 
-#fp-nav ul li:first-of-type { pointer-events: none; }
+#fp-nav ul li:first-of-type { display: none; }
 
 /* media queries */
 
