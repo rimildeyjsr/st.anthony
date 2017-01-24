@@ -827,10 +827,7 @@ html,body,.container-fluid {
 }
 
 #section6 {
-    background-image: url(../images/ashutosh_narayan.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #252525;
 }
 
 #section6 h3 {
