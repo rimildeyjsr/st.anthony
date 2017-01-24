@@ -474,14 +474,14 @@ html,body,.container-fluid {
     }
 }
 
-#slideshow{
+#slideshow,#slideshow_2{
     position: relative;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
 }
 
-#slideshow img {
+#slideshow img,#slideshow_2 img {
     position: absolute;
     left: 0;
     top: 0;
@@ -511,7 +511,7 @@ html,body,.container-fluid {
  * This is because the second image needs to show on top of the first one when it transitions in.
  */
 
-#slideshow .fx:first-child + img ~ img  {
+#slideshow .fx:first-child + img ~ img,#slideshow_2 .fx:first-child + img ~ img  {
     z-index:-1;
 }
 
@@ -519,7 +519,7 @@ html,body,.container-fluid {
  * Because images are styled with a different point of origin, the following rule will create different panning effects.
  */
 
-#slideshow .fx {
+#slideshow .fx,#slideshow_2 .fx {
     opacity:1;
     -webkit-transform: scale(1.5);
     -moz-transform: scale(1.5);
@@ -815,6 +815,12 @@ html,body,.container-fluid {
 
 #fp-nav ul li:first-of-type { display: none; }
 
+#section5 {
+    background-image: url(../images/madam_francis_2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 /* media queries */
 
 @media screen and (max-width: 480px) {
@@ -824,7 +830,7 @@ html,body,.container-fluid {
         width: auto;
     }
         /* overlay applied on mobile*/
-        #slideshow:before {
+        #slideshow:before, #slideshow_2:before {
             display: block;
             content: '';
             position: relative;
@@ -899,7 +905,7 @@ html,body,.container-fluid {
         display: block;
     }
 
-    #slideshow img {
+    #slideshow img, #slideshow_2 img {
         -webkit-transform-origin: top right;
         -moz-transform-origin: top right;
         -ms-transform-origin: top right;
@@ -965,7 +971,7 @@ html,body,.container-fluid {
             display: block;
         }
 
-        #slideshow img {
+        #slideshow img, #slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -973,7 +979,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1),#slideshow_2 img:nth-child(2n+1)  {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -981,14 +987,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1),#slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1),#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;
@@ -1055,7 +1061,7 @@ html,body,.container-fluid {
             padding-top: 0;
         }
 
-        #slideshow img {
+        #slideshow img,#slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -1063,7 +1069,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1),#slideshow_2 img:nth-child(2n+1) {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -1071,14 +1077,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1),#slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1),#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;
@@ -1145,7 +1151,7 @@ html,body,.container-fluid {
             padding-top: 0;
         }
 
-        #slideshow img {
+        #slideshow img,#slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -1153,7 +1159,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1), #slideshow_2 img:nth-child(2n+1) {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -1161,14 +1167,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1), #slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1)#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;
@@ -1234,7 +1240,7 @@ html,body,.container-fluid {
             padding-top: 0;
         }
 
-        #slideshow img {
+        #slideshow img, #slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -1242,7 +1248,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1),#slideshow_2 img:nth-child(2n+1) {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -1250,14 +1256,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1), #slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1),#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;
@@ -1338,7 +1344,7 @@ html,body,.container-fluid {
             padding-top: 0;
         }
 
-        #slideshow img {
+        #slideshow img,#slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -1346,7 +1352,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1),#slideshow_2 img:nth-child(2n+1) {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -1354,14 +1360,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1),#slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1),#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;
@@ -1441,7 +1447,7 @@ html,body,.container-fluid {
             padding-top: 0;
         }
 
-        #slideshow img {
+        #slideshow img,#slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -1449,7 +1455,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1),#slideshow_2 img:nth-child(2n+1) {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -1457,14 +1463,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1), #slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1),#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;
@@ -1487,7 +1493,7 @@ html,body,.container-fluid {
             top: 81.5%;
         }
 
-        #slideshow img {
+        #slideshow img,#slideshow_2 img {
             -webkit-transform-origin: bottom left;
             -moz-transform-origin: bottom left;
             -ms-transform-origin: bottom left;
@@ -1495,7 +1501,7 @@ html,body,.container-fluid {
             transform-origin: bottom left;
         }
 
-        #slideshow img:nth-child(2n+1) {
+        #slideshow img:nth-child(2n+1),#slideshow_2 img:nth-child(2n+1) {
             -webkit-transform-origin: top right;
             -moz-transform-origin: top right;
             -ms-transform-origin: top right;
@@ -1503,14 +1509,14 @@ html,body,.container-fluid {
             transform-origin: top right;
         }
 
-        #slideshow img:nth-child(3n+1) {
+        #slideshow img:nth-child(3n+1),#slideshow_2 img:nth-child(3n+1) {
             -webkit-transform-origin: top left;
             -moz-transform-origin: top left;
             -ms-transform-origin: top left;
             -o-transform-origin: top left;
             transform-origin: top left;
         }
-        #slideshow img:nth-child(4n+1) {
+        #slideshow img:nth-child(4n+1),#slideshow_2 img:nth-child(4n+1) {
             -webkit-transform-origin: bottom right;
             -moz-transform-origin: bottom right;
             -ms-transform-origin: bottom right;

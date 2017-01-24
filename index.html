@@ -287,6 +287,18 @@
             </div>
 
         </div>
+
+        <div class="section" id="section5">
+            <div id="slideshow_2">
+                <img src="images/madam_francis.jpg" alt="founder photos">
+                <img src="images/madam_francis_1.jpg" alt="founder photos">
+                <img src="images/madam_francis_2.jpg" alt="founder photos">
+                <img src="images/photo.jpg" alt="founder photos">
+                <img src="images/school_day.jpg" alt="founder photos">
+                <img src="images/schol_day2.jpg" alt="founder photos">
+                <img src="images/telesphor_toppo.jpg" alt="founder photos">
+            </div>
+        </div>
     </div>
 
         <!-- Javascript files -->
@@ -321,6 +333,27 @@
                 }
             };
 
+            function slideEffect_2(){
+                //apply fx class to first element
+                document.getElementById('slideshow_2').getElementsByTagName('img')[0].className = "fx";
+                //loop kenburns effect every 15 seconds
+                window.setInterval(kenBurns, 15000);
+                //gets all images under slideshow
+                var images = document.getElementById('slideshow_2').getElementsByTagName('img'),
+                        numberOfImages  = images.length,
+                        i= 1;
+
+                function kenBurns() {
+                    //applies class fx appropriately
+                    if(i==numberOfImages){ i = 0;}
+                    images[i].className = "fx";
+                    if(i===0){ images[numberOfImages-2].className = "";}
+                    if(i===1){ images[numberOfImages-1].className = "";}
+                    if(i>1){ images[i-2].className = "";}
+                    i++;
+                }
+            };
+
             //variable for animation ends for all vendors required for callback function
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 
@@ -331,6 +364,7 @@
                 $('#section2').hide();
                 $('#section3').hide();
                 $('#section4').hide();
+                $('#section5').hide();
                 $('#toggle').hide();
 
                 $('#toggle').click(function() {
@@ -345,7 +379,7 @@
                 });
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
-                    anchors:['welcome','home','administration_page','faculty_section','staff_section'],
+                    anchors:['welcome','home','administration_page','faculty_section','staff_section','founder_section'],
                     navigation: true,
                     navigationPosition: 'right',
                     fixedElements: '#toggle,#overlay',
@@ -360,6 +394,7 @@
                             $('#section2').show();
                             $('#section3').show();
                             $('#section4').show();
+                            $('#section5').show();
                             $('#toggle').hide();
 
                         }
@@ -407,6 +442,9 @@
                             $('#section4 .card').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
+                        }
+                        if(index == 6 || anchorLink == 'founder_section'){
+                            slideEffect_2();
                         }
                     }
 
