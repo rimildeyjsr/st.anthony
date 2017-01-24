@@ -799,7 +799,7 @@ html,body,.container-fluid {
     font-family: "Roboto Mono",sans-serif;
     font-size: 1.15em;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     margin: 0;
 }
 
@@ -807,7 +807,7 @@ html,body,.container-fluid {
     font-family: "Roboto Mono",sans-serif;
     text-align: center;
     font-size: 0.68em;
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
     margin:4px 0 0 0;
     line-height:1.85 ;
