@@ -821,6 +821,20 @@ html,body,.container-fluid {
     background-position: center;
     background-size: cover;
 }
+
+#section6 {
+    background-image: url(../images/ashutosh_narayan.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#section6 h2 {
+    color: #4f2500;
+    font-size: 4em;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+}
 /* media queries */
 
 @media screen and (max-width: 480px) {
