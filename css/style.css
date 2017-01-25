@@ -914,65 +914,69 @@ html,body,.container-fluid {
     font-weight: 500;
 }
 
-.slow-fadeIn {
-    animation:2s slow-fade ease-out forwards;
+#section7 {
+    background-color: #4f2500;
 }
 
-@keyframes slow-fade {
-    0% {
-
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    10% {
-        opacity: 0.1;
-        transform: translateY(90%);
-    }
-
-    20% {
-        opacity: 0.2;
-        transform: translateY(80%);
-    }
-    30% {
-        opacity: 0.3;
-        transform: translateY(70%);
-    }
-
-    40% {
-        opacity: 0.4;
-        transform: translateY(60%);
-    }
-    50% {
-        opacity: 0.5;
-        transform: translateY(50%);
-    }
-
-    60% {
-        opacity: 0.6;
-        transform: translateY(40%);
-    }
-
-    70% {
-        opacity: 0.7;
-        transform: translateY(30%);
-    }
-
-    80% {
-        opacity: 0.8;
-        transform: translateY(20%);
-    }
-    90% {
-        opacity: 0.9;
-        transform: translateY(10%);
-    }
-    100% {
-
-        opacity: 1;
-        transform: none;
-    }
-
+#section7 p {
+    color: white;
+    font-size: 1.8em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    margin: 9.5% 5% 6% 5%;
 }
 
+.icons i {
+    color: white;
+    margin: 0% 3% 6% 3%;
+    display: inline-block;
+}
+
+.extra-left {
+    margin: 0% 3% 6% 6% !important;
+}
+
+#section7 button {
+    background-color: white;
+    color: #4f2500;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -o-border-radius: 40px;
+    -ms-border-radius: 40px;
+    border-radius: 40px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #4f2500;
+    font-size: 1.5em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    margin: 0% 5% 0% 5%;
+}
+
+#map {
+    height: 350px;
+    width: 45%;
+    margin: 5%;
+}
+
+footer {
+    background-color: white;
+    top:93%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin: 0;
+}
+
+#section7 footer p {
+    font-family: 'Roboto Condensed', sans-serif;
+    color:#4f2500;
+    margin: 2px;
+    padding: 0.5% 0 1% 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5em;
+}
 /* media queries */
 
 @media screen and (max-width: 480px) {

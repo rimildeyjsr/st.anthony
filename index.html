@@ -12,6 +12,7 @@
         <!--fonts-->
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i,400,400i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
 
         <!-- CSS Stylesheets -->
         <link href="css/normalize.css" rel="stylesheet">
@@ -326,7 +327,35 @@
         </div>
 
         <div class="section" id="section7">
+            <div id="map" class="col-md-7 col-lg-7">
 
+            </div>
+
+            <div class="contact col-md-5 col-lg-5">
+                <p>
+                    AG Road, Near A.G. Office, Gaurishankar <br>
+                    Nagar, Shyamali Colony, Doranda, <br>
+                    Ranchi, Jharkhand 834002 <br>
+
+                    <br>
+
+                    Ph: 092040 60251
+                </p>
+
+                <br>
+                <div class="icons">
+                    <i class="fa fa-4x fa-facebook-official extra-left" aria-hidden="true"></i>
+                    <i class="fa fa-4x fa-github" aria-hidden="true"></i>
+                    <i class="fa fa-4x fa-twitter" aria-hidden="true"></i>
+                </div>
+                <br>
+                <button>
+                    Contact Us
+                </button>
+            </div>
+            <footer>
+                <p>Made with <3 at The Design Foundry</p>
+            </footer>
         </div>
     </div>
 
@@ -339,7 +368,22 @@
         <script src="js/classie.js"></script>
         <script src="https://use.fontawesome.com/83638a08d2.js"></script>
         <script src="js/main.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCR6u1JnExKtoulAPb-lp-HHN-Bktq2Ss&callback=initMap">
+        </script>
         <script>
+
+            function initMap() {
+                var school = {lat: 23.3435, lng: 85.3148};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 15,
+                    center: school
+                });
+                var marker = new google.maps.Marker({
+                    position: school,
+                    map: map
+                });
+            }
             //loops through images and applies kenburns effect
             function slideEffect(id){
                 //apply fx class to first element
@@ -469,7 +513,7 @@
                         if(index == 7 || anchorLink == 'memory_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
-                            $('.card-section6').addClass('slow-fadeIn');
+                            $('.card-section6').addClass('animated fadeInUp');
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
