@@ -895,7 +895,7 @@ html,body,.container-fluid {
     opacity: 1;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     padding: 5px;
-    
+
 }
 
 .card-section6 img {
@@ -915,14 +915,14 @@ html,body,.container-fluid {
 }
 
 .slow-fadeIn {
-    animation: 5s slow-fade linear forwards;
+    animation:8s slow-fade linear forwards;
 }
 
 @keyframes slow-fade {
-    0%{
-        transform: translateY(100%);
+    0% {
+        transform: translateY(200%);
     }
-    100%{
+    100% {
         transform: translateY(0);
     }
 
