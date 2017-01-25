@@ -1649,11 +1649,6 @@ footer {
     @media screen and (min-width: 920px){
         /*random breakpoint based on design*/
 
-        #map {
-            height: 350px;
-            width: 45%;
-            margin: 5%;
-        }
         .school-logo{
             height: 315px;
             top: 10%;
@@ -1786,6 +1781,12 @@ footer {
             height: 50px;
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
+        }
+
+        #map {
+            height: 350px;
+            width: 45%;
+            margin: 5%;
         }
 
     }
