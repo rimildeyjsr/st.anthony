@@ -1105,6 +1105,7 @@ html,body,.container-fluid {
         border-left: none;
         margin: 0% 10%;
         padding-bottom: 30%;
+        padding-top: 5%;
     }
 
 
@@ -1245,28 +1246,29 @@ html,body,.container-fluid {
             border-top: none;
             border-left: none;
             margin: 0 10%;
-            padding-bottom: 0;
+            padding-bottom: 30%;
+            padding-top: 5%;
         }
 
 
         #section7 p {
-            font-size: 1.4em;
-            margin: 6% 9% 6% 22%;
+            font-size: 1.8em;
+            margin: 6% 9% 15% 22%;
         }
 
         .icons a i {
-            margin: 0% 3% 4% 3%;
+            margin: 2% 6% 10% 6%;
         }
 
         .extra-left {
-            margin: 0% 3% 4% 22% !important;
+            margin: 2% 6% 10% 6% !important;
         }
 
         #section7 button {
             width: 125px;
             height: 35px;
             font-size: 1.3em;
-            margin: 0% 5% 3% 22%;
+            margin: 10% 5% 3% 22%;
         }
 
         .design-foundry {
