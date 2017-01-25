@@ -960,6 +960,7 @@ html,body,.container-fluid {
     height: 350px;
     width: 45%;
     margin: 5%;
+    opacity: 0;
 }
 
 .button--sonar {
@@ -980,9 +981,12 @@ html,body,.container-fluid {
     position: absolute;
     bottom:0;
     width: 100%;
+    opacity: 0;
 }
 
-
+.contact {
+    opacity: 0;
+}
 /* media queries */
 
 @media screen and (max-width: 480px) {
