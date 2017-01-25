@@ -811,7 +811,7 @@ html,body,.container-fluid {
     font-family: "Roboto Mono",sans-serif;
     text-align: center;
     font-size: 0.68em;
-    font-weight: 600;
+    font-weight: 400;
     font-style: italic;
     margin:4px 0 0 0;
     line-height:1.85 ;
@@ -915,17 +915,19 @@ html,body,.container-fluid {
 }
 
 .slow-fadeIn {
-    animation:4s slow-fade ease-out forwards;
+    animation:2s slow-fade ease-out forwards;
 }
 
 @keyframes slow-fade {
     0% {
 
         opacity: 0;
+        transform: translateY(100%);
     }
     100% {
 
         opacity: 1;
+        transform: none;
     }
 
 }
