@@ -920,7 +920,7 @@ html,body,.container-fluid {
 
 @keyframes slow-fade {
     0% {
-        transform: translateY(200%);
+        transform: translateY(150%);
     }
     100% {
         transform: translateY(0);
