@@ -1253,22 +1253,22 @@ html,body,.container-fluid {
 
         #section7 p {
             font-size: 1.8em;
-            margin: 6% 9% 15% 22%;
+            margin: 6% 9% 10% 22%;
         }
 
         .icons a i {
-            margin: 2% 6% 10% 6%;
+            margin: 2% 6% 8% 6%;
         }
 
         .extra-left {
-            margin: 2% 6% 10% 6% !important;
+            margin: 2% 6% 8% 16% !important;
         }
 
         #section7 button {
             width: 125px;
             height: 35px;
             font-size: 1.3em;
-            margin: 10% 5% 3% 22%;
+            margin: 2% 5% 3% 22%;
         }
 
         .design-foundry {

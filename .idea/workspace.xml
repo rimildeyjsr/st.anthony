@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/photo.jpg" afterPath="$PROJECT_DIR$/images/photo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/schol_day2.jpg" afterPath="$PROJECT_DIR$/images/schol_day2.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
     </list>
     <ignored path="portfolio.iws" />
@@ -36,8 +38,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66061705">
-              <caret line="1266" column="26" selection-start-line="1266" selection-start-column="26" selection-end-line="1266" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.5680581">
+              <caret line="1263" column="31" selection-start-line="1263" selection-start-column="31" selection-end-line="1263" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -671,8 +673,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66061705">
-          <caret line="1266" column="26" selection-start-line="1266" selection-start-column="26" selection-end-line="1266" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.5680581">
+          <caret line="1263" column="31" selection-start-line="1263" selection-start-column="31" selection-end-line="1263" selection-end-column="31" />
           <folding />
         </state>
       </provider>
