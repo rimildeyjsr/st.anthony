@@ -18,6 +18,7 @@
         <link href="css/normalize.css" rel="stylesheet">
         <link href="jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet">
         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/colms.css" rel="stylesheet">
         <link href="css/animate.css" rel="stylesheet">
         <link href="css/jquery.fullPage.css" rel="stylesheet">
         <link rel="stylesheet" href="css/component.css" />
@@ -327,11 +328,11 @@
         </div>
 
         <div class="section" id="section7">
-            <div id="map" class="col-md-7 col-lg-7 col-sm-7">
+            <div id="map" class="col-md-7 col-lg-7 col-sm-7 col-ms-7">
 
             </div>
 
-            <div class="contact col-md-5 col-lg-5 col-sm-5">
+            <div class="contact col-md-5 col-lg-5 col-sm-5 col-ms-5">
                 <p>
                     St.Anthony's School, <br>
                     North Office Para, <br>
@@ -515,7 +516,7 @@
                         if(index == 8 || anchorLink == 'contact_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
-                            if (window.innerWidth < 755) {
+                            if (window.innerWidth < 600) {
                                 $('.icons i').removeClass('fa-4x').addClass('fa-2x');
                             }
                             $.fn.fullpage.setAllowScrolling(true,'up');
