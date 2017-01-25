@@ -1109,8 +1109,12 @@ footer {
 
 
     #section7 p {
-        font-size: 1.4em;
-        margin: 9.5% 5% 6% 9%;
+        font-size: 1.2em;
+        margin: 6% 5% 6% 9%;
+    }
+
+    .icons i {
+        margin: 0% 3% 0% 3%;
     }
 
     .extra-left {
@@ -1118,10 +1122,10 @@ footer {
     }
 
     #section7 button {
-        width: 150px;
-        height: 35px;
-        font-size: 1.6em;
-        margin: 0% 5% 3% 10%;
+        width: 125px;
+        height: 30px;
+        font-size: 1.2em;
+        margin: 0% 5% 3% 8%;
     }
 
 }
@@ -1242,6 +1246,10 @@ footer {
         #section7 p {
             font-size: 1.8em;
             margin: 9.5% 5% 6% 5%;
+        }
+
+        .icons i {
+            margin: 0% 3% 6% 3%;
         }
 
         .extra-left {
@@ -1375,6 +1383,10 @@ footer {
             margin: 9.5% 5% 6% 5%;
         }
 
+        .icons i {
+            margin: 0% 3% 6% 3%;
+        }
+
         .extra-left {
             margin: 0% 3% 8% 6% !important;
         }
@@ -1506,6 +1518,10 @@ footer {
             margin: 9.5% 5% 6% 5%;
         }
 
+        .icons i {
+            margin: 0% 3% 6% 3%;
+        }
+
         .extra-left {
             margin: 0% 3% 8% 6% !important;
         }
@@ -1633,6 +1649,10 @@ footer {
         #section7 p {
             font-size: 1.8em;
             margin: 9.5% 5% 6% 5%;
+        }
+
+        .icons i {
+            margin: 0% 3% 6% 3%;
         }
 
         .extra-left {
@@ -1773,6 +1793,10 @@ footer {
         #section7 p {
             font-size: 1.8em;
             margin: 9.5% 5% 6% 5%;
+        }
+
+        .icons i {
+            margin: 0% 3% 6% 3%;
         }
 
         .extra-left {
@@ -1926,6 +1950,10 @@ footer {
             margin: 9.5% 5% 6% 5%;
         }
 
+        .icons i {
+            margin: 0% 3% 6% 3%;
+        }
+
         .extra-left {
             margin: 0% 3% 8% 6% !important;
         }
@@ -2068,6 +2096,10 @@ footer {
         #section7 p {
             font-size: 1.8em;
             margin: 9.5% 5% 6% 5%;
+        }
+
+        .icons i {
+            margin: 0% 3% 6% 3%;
         }
 
         .extra-left {
