@@ -984,6 +984,7 @@ html,body,.container-fluid {
     opacity: 0;
 }
 
+
 .contact {
     opacity: 0;
 }
@@ -1103,27 +1104,28 @@ html,body,.container-fluid {
         border-top: none;
         border-left: none;
         margin: 0% 10%;
+        padding-bottom: 30%;
     }
 
 
     #section7 p {
-        font-size: 1.6em;
-        margin: 6% 5% 6% 9%;
+        font-size: 1.8em;
+        margin: 0 5% 15% 9%;
     }
 
     .icons a i {
-        margin: 0% 3% 0% 3%;
+        margin: 2% 6% 10% 6%;
     }
 
     .extra-left {
-        margin: 0% 3% 6% 10% !important;
+        margin: 2% 6% 10% 6% !important;
     }
 
     #section7 button {
         width: 125px;
         height: 30px;
         font-size: 1.2em;
-        margin: 0% 5% 3% 8%;
+        margin: 10% 5% 3% 8%;
     }
 
     .design-foundry {
@@ -1243,6 +1245,7 @@ html,body,.container-fluid {
             border-top: none;
             border-left: none;
             margin: 0 10%;
+            padding-bottom: 0;
         }
 
 
@@ -1383,6 +1386,7 @@ html,body,.container-fluid {
             border-left: 4px solid white;
             border-top: none;
             margin: 0;
+            padding-bottom: 0;
         }
 
 
@@ -1522,6 +1526,7 @@ html,body,.container-fluid {
             border-left: 4px solid white;
             border-top: none;
             margin: 0;
+            padding-bottom: 0;
         }
 
 
@@ -1660,6 +1665,7 @@ html,body,.container-fluid {
             border-left: 4px solid white;
             border-top: none;
             margin: 0;
+            padding-bottom: 0;
         }
 
 
@@ -1807,6 +1813,7 @@ html,body,.container-fluid {
             border-left: 4px solid white;
             border-top: none;
             margin: 0;
+            padding-bottom: 0;
         }
 
 
@@ -1967,6 +1974,7 @@ html,body,.container-fluid {
             border-left: 4px solid white;
             border-top: none;
             margin: 0;
+            padding-bottom: 0;
         }
 
 
@@ -2120,6 +2128,7 @@ html,body,.container-fluid {
             border-left: 4px solid white;
             border-top: none;
             margin: 0;
+            padding-bottom: 0;
         }
 
         #section7 p {
