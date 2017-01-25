@@ -962,26 +962,6 @@ html,body,.container-fluid {
     margin: 5%;
 }
 
-footer {
-    background-color: white;
-    top:93%;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    margin: 0;
-}
-
-#section7 footer p {
-    font-family: 'Roboto Mono', sans-serif;
-    color:#000000;
-    margin: 2px;
-    padding: 0.5% 0 1% 0;
-    text-align: center;
-    font-weight: 400;
-    font-size: 1.5em;
-    word-spacing: 4px;
-}
-
 .button--sonar {
     border-radius: 50px;
     width: 80px;
@@ -990,6 +970,19 @@ footer {
     font-size: 1.4em;
     text-align: center;
 }
+
+.design-foundry {
+    background-color: white;
+    color: black;
+    font-family: 'Roboto Mono',monospace;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+
 /* media queries */
 
 @media screen and (max-width: 480px) {
@@ -1129,6 +1122,10 @@ footer {
         margin: 0% 5% 3% 8%;
     }
 
+    .design-foundry {
+        font-size: 1.2em;
+    }
+
 }
     @media screen and (min-width: 480px) {
         /* smartphones, Android phones, landscape iPhone */
@@ -1263,6 +1260,10 @@ footer {
             height: 35px;
             font-size: 1.3em;
             margin: 0% 5% 3% 22%;
+        }
+
+        .design-foundry {
+            font-size: 1.3em;
         }
     }
 
@@ -1400,6 +1401,9 @@ footer {
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
         }
+        .design-foundry {
+            font-size: 1.4em;
+        }
 
     }
     @media screen and (min-width: 755px) {
@@ -1536,6 +1540,10 @@ footer {
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
         }
+
+        .design-foundry {
+            font-size: 1.4em;
+        }
     }
     @media screen and (min-width: 801px) {
         /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -1669,6 +1677,9 @@ footer {
             height: 50px;
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
+        }
+        .design-foundry {
+            font-size: 1.4em;
         }
 
     }
@@ -1813,6 +1824,9 @@ footer {
             height: 50px;
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
+        }
+        .design-foundry {
+            font-size: 1.4em;
         }
 
         #map {
@@ -1971,6 +1985,9 @@ footer {
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
         }
+        .design-foundry {
+            font-size: 1.4em;
+        }
 
     }
 
@@ -2119,5 +2136,9 @@ footer {
             height: 50px;
             font-size: 1.8em;
             margin: 0% 5% 3% 5%;
+        }
+
+        .design-foundry {
+            font-size: 1.4em;
         }
     }
