@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_francis_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_kenwar_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_khalkho_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_kumar_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_m_sinha_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_srivastav_optimised.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_verma_optimised.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/mrs_banwar.png" afterPath="$PROJECT_DIR$/images/mrs_banwar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Deepak_Bhaiya_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Monica_Didi_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Picture1_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Picture2_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Picture3_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Picture4_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Sudhir_Bhaiya_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/Sunita_Didi_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ashutosh_narayan_mobile.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mrs_cooke_optimised.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/the_principal.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="portfolio.iws" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47241378">
-              <caret line="192" column="50" selection-start-line="192" selection-start-column="50" selection-end-line="192" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.2637931">
+              <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -681,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47241378">
-          <caret line="192" column="50" selection-start-line="192" selection-start-column="50" selection-end-line="192" selection-end-column="50" />
+        <state vertical-scroll-proportion="0.2637931">
+          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
           <folding />
         </state>
       </provider>
