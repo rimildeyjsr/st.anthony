@@ -538,7 +538,7 @@
             });
 
 
-            function display(){
+            /*function display(){
                 $('.text').each(function () {
                     var delay = $(this).index();
                     $(this).css('animation-delay', delay*8 + 's');
@@ -560,6 +560,23 @@
                 });
                 setTimeout(display,16100);
 
+            }*/
+
+            var $txt = $('.text');
+            var $img = $('.admin-pic');
+            var incr = 0;
+            function display(){
+                var $this = $txt.eq(incr);
+                var $that = $img.eq(incr);
+                $this.one('animationend',function(){
+                    incr = incr ? 0:1;
+                    $this.removeClass('fadeInUpExit');
+                    $that.removeClass('fadeInDownExit');
+                    display();
+                });
+
+                $this.addClass('fadeInUpExit');
+                $that.addClass('fadeInDownExit');
             }
 
         </script>
