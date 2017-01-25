@@ -826,18 +826,6 @@ html,body,.container-fluid {
     background-size: cover;
 }
 
-#section6 {
-    background-color: #252525;
-}
-
-#section6 h3 {
-    color: #4f2500;
-    font-size: 4em;
-    font-family: 'Times New Roman';
-    font-style: italic;
-    text-align: center;
-}
-
 #slideshow_2:before {
     display: block;
     content: '';
@@ -857,15 +845,19 @@ html,body,.container-fluid {
     width: 40%;
     margin-left: -200px;
     font-family: 'Times New Roman';
+    font-weight: 100;
     font-style: italic;
     color: #ffffff;
-    animation: 100s credits linear infinite;
     z-index: 100;
 }
 
 .wrapper h4 {
     font-size: 2.5em;
     color: #ffffff;
+}
+
+.credit-animation {
+    animation: 100s credits linear forwards;
 }
 
 @keyframes credits {
@@ -875,6 +867,50 @@ html,body,.container-fluid {
     100% {
         top: -500%;
     }
+}
+
+#section6 {
+    background-color: #252525;
+}
+
+#section6 h1 {
+    color: white;
+    font-size: 2em;
+    font-family: 'Times New Roman';
+    font-style: italic;
+    text-align: left;
+    margin: 2%;
+    position: absolute;
+    top:2%;
+    font-weight: 100;
+}
+
+.card-section6 {
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    margin: 5% auto;
+    position: relative;
+    width: 19%;
+    opacity: 1;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    padding: 5px;
+}
+
+.card-section6 img {
+    display: block;
+    margin: 10% auto 30% auto;
+    width: 80%;
+    height: auto;
+}
+
+.card-section6 h4 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.3em;
+    font-style: italic;
+    margin: 0% 5% 12% 5%;
 }
 
 /* media queries */
