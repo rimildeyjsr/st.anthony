@@ -847,7 +847,6 @@ html,body,.container-fluid {
     font-family: 'Times New Roman';
     font-weight: 100;
     font-style: italic;
-    color: #ffffff;
     z-index: 100;
 }
 
@@ -892,7 +891,7 @@ html,body,.container-fluid {
     margin: 5% auto;
     position: relative;
     width: 19%;
-    opacity: 1;
+    opacity: 0;
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     padding: 5px;
 
@@ -912,18 +911,21 @@ html,body,.container-fluid {
     font-size: 1.3em;
     font-style: italic;
     margin: 0% 5% 12% 5%;
+    font-weight: 500;
 }
 
 .slow-fadeIn {
-    animation:8s slow-fade linear forwards;
+    animation:4s slow-fade ease-out forwards;
 }
 
 @keyframes slow-fade {
     0% {
-        transform: translateY(150%);
+
+        opacity: 0;
     }
     100% {
-        transform: translateY(0);
+
+        opacity: 1;
     }
 
 }
@@ -1024,6 +1026,11 @@ html,body,.container-fluid {
         width: 55%;
     }
 
+    .wrapper {
+        left: 60%;
+        width: 35%;
+    }
+
 }
     @media screen and (min-width: 480px) {
         /* smartphones, Android phones, landscape iPhone */
@@ -1116,7 +1123,14 @@ html,body,.container-fluid {
         .card-section6 {
             width: 44%;
         }
+
+        .wrapper {
+            width: 40%;
+            left: 36%;
+        }
+
     }
+
     @media screen and (min-width: 600px) {
         /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
         .school-logo{
@@ -1207,6 +1221,11 @@ html,body,.container-fluid {
 
         .card-section6 {
             width: 33%;
+        }
+
+        .wrapper {
+            width: 38%;
+            left: 33%;
         }
 
     }
@@ -1302,6 +1321,11 @@ html,body,.container-fluid {
             width: 30%;
         }
 
+        .wrapper {
+            width: 38%;
+            left: 30%;
+        }
+
     }
     @media screen and (min-width: 801px) {
         /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -1394,6 +1418,12 @@ html,body,.container-fluid {
         .card-section6 {
             width: 28%;
         }
+
+        .wrapper {
+            width: 38%;
+            left: 32%;
+        }
+
     }
 
 
@@ -1500,6 +1530,12 @@ html,body,.container-fluid {
         .card-section6 {
             width: 26%;
         }
+
+        .wrapper {
+            width: 38%;
+            left: 28%;
+        }
+
 
     }
 
@@ -1608,6 +1644,15 @@ html,body,.container-fluid {
             width: 23%;
         }
 
+        .wrapper {
+            width: 39%;
+            left: 25%;
+        }
+
+        .wrapper h4 {
+            font-size: 2.5em;
+        }
+
     }
 
     @media screen and (min-width: 1281px) {
@@ -1714,4 +1759,14 @@ html,body,.container-fluid {
         .card-section6 {
             width: 19%;
         }
+
+        .wrapper {
+            width: 40%;
+            left: 20%;
+        }
+
+        .wrapper h4 {
+            font-size: 2.5em;
+        }
+
     }

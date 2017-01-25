@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="995af68c-c54b-4594-84b1-645058f7a6e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="portfolio.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.769231">
-              <caret line="463" column="72" selection-start-line="463" selection-start-column="72" selection-end-line="463" selection-end-column="72" />
+            <state vertical-scroll-proportion="-12.423077">
+              <caret line="322" column="77" selection-start-line="322" selection-start-column="77" selection-end-line="322" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -36,8 +37,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26641652">
-              <caret line="922" column="32" selection-start-line="922" selection-start-column="32" selection-end-line="922" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.36476868">
+              <caret line="917" column="15" selection-start-line="917" selection-start-column="15" selection-end-line="917" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -661,16 +662,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="463" column="72" selection-start-line="463" selection-start-column="72" selection-end-line="463" selection-end-column="72" />
+        <state vertical-scroll-proportion="-12.423077">
+          <caret line="322" column="77" selection-start-line="322" selection-start-column="77" selection-end-line="322" selection-end-column="77" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26641652">
-          <caret line="922" column="32" selection-start-line="922" selection-start-column="32" selection-end-line="922" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.36476868">
+          <caret line="917" column="15" selection-start-line="917" selection-start-column="15" selection-end-line="917" selection-end-column="15" />
           <folding />
         </state>
       </provider>
