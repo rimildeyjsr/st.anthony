@@ -193,7 +193,7 @@
                 </ul>
                 <div class="controls">
                     <!--<button class="button button--sonar button--reject" data-stack="stack_yuda"><i class="fa fa-arrow-left"></i><span class="text-hidden">Reject</span></button>-->
-                    <button class="button button--sonar button--accept" data-stack="stack_yuda"><i class="fa fa-arrow-right"></i><span class="text-hidden">Accept</span></button>
+                    <button class="button button--sonar button--accept" data-stack="stack_yuda">Next<span class="text-hidden">Accept</span></button>
                 </div>
             </div>
         </div>
@@ -287,7 +287,7 @@
                 </ul>
                 <div class="controls">
                     <!--<button class="button button--sonar button--reject" data-stack="stack_yuda_1"><i class="fa fa-arrow-left"></i><span class="text-hidden">Reject</span></button>-->
-                    <button class="button button--sonar button--accept" data-stack="stack_yuda_1"><i class="fa fa-arrow-right"></i><span class="text-hidden">Accept</span></button>
+                    <button class="button button--sonar button--accept" data-stack="stack_yuda_1">Next <span class="text-hidden">Accept</span></button>
                 </div>
             </div>
 
@@ -517,6 +517,9 @@
                         if(index == 8 || anchorLink == 'contact_section'){
                             $('#fp-nav').show();
                             $('#toggle').show();
+                            if (window.innerWidth < 480) {
+                                $('.icons i').removeClass('fa-4x').addClass('fa-2x');
+                            }
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
