@@ -1231,36 +1231,36 @@ footer {
         }
 
         #map {
-            height: 350px;
-            width: 45%;
-            margin: 5%;
+            height: 150px;
+            width: 75%;
+            margin: 10% auto 5% auto;
         }
 
         .contact {
-            border-left: 4px solid white;
-            border-top: none;
-            margin: 0;
+            border-top: 2px solid white;
+            border-left: none;
+            margin: 0 15%;
         }
 
 
         #section7 p {
-            font-size: 1.8em;
-            margin: 9.5% 5% 6% 5%;
+            font-size: 1.3em;
+            margin: 6% 9% 6% 22%;
         }
 
         .icons i {
-            margin: 0% 3% 6% 3%;
+            margin: 0% 3% 4% 3%;
         }
 
         .extra-left {
-            margin: 0% 3% 6% 6% !important;
+            margin: 0% 3% 4% 22% !important;
         }
 
         #section7 button {
-            width: 200px;
-            height: 50px;
-            font-size: 1.8em;
-            margin: 0% 5% 3% 5%;
+            width: 125px;
+            height: 35px;
+            font-size: 1.3em;
+            margin: 0% 5% 3% 22%;
         }
     }
 
