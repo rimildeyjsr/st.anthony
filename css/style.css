@@ -169,6 +169,9 @@ html,body,.container-fluid {
 
 #section1 {
     background-image: url("../images/page-1-hero-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .school-name {
     position: absolute;
