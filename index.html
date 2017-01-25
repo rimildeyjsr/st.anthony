@@ -64,7 +64,7 @@
                         <li><a href="#staff_section">HELPING STAFF</a></li>
                         <li><a href="#founder_section">WORDS FROM OUR FOUNDER</a></li>
                         <li><a href="#memory_section">IN OUR MEMORY</a>
-                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#contact_section">CONTACT US</a></li>
                     </ul>
                 </nav>
             </div>
@@ -324,6 +324,10 @@
                 </h4>
             </div>
         </div>
+
+        <div class="section" id="section7">
+
+        </div>
     </div>
 
         <!-- Javascript files -->
@@ -371,6 +375,7 @@
                 $('#section4').hide();
                 $('#section5').hide();
                 $('#section6').hide();
+                $('#section7').hide();
                 $('#toggle').hide();
 
                 $('#toggle').click(function() {
@@ -385,7 +390,8 @@
                 });
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
-                    anchors:['welcome','home','administration_page','faculty_section','staff_section','founder_section','memory_section'],
+                    anchors:['welcome','home','administration_page','faculty_section','staff_section','founder_section','memory_section',
+                    'contact_section'],
                     navigation: true,
                     navigationPosition: 'right',
                     fixedElements: '#toggle,#overlay',
@@ -402,6 +408,8 @@
                             $('#section4').show();
                             $('#section5').show();
                             $('#section6').show();
+                            $('#section7').show();
+
                             $('#toggle').hide();
 
                         }
@@ -462,6 +470,12 @@
                             $('#fp-nav').show();
                             $('#toggle').show();
                             $('.card-section6').addClass('slow-fadeIn');
+                            $.fn.fullpage.setAllowScrolling(true,'up');
+                            $.fn.fullpage.setKeyboardScrolling(true, 'up');
+                        }
+                        if(index == 8 || anchorLink == 'contact_section'){
+                            $('#fp-nav').show();
+                            $('#toggle').show();
                             $.fn.fullpage.setAllowScrolling(true,'up');
                             $.fn.fullpage.setKeyboardScrolling(true, 'up');
                         }
