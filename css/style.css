@@ -844,8 +844,8 @@ html,body,.container-fluid {
     left: 20%;
     width: 40%;
     margin-left: -200px;
-    font-family: 'Times New Roman';
-    font-weight: 100;
+    font-family: 'Cormorant Garamond';
+    font-weight: 300;
     font-style: italic;
     z-index: 100;
 }
@@ -1079,7 +1079,7 @@ footer {
 
     .wrapper {
         left: 60%;
-        width: 30%;
+        width: 55%;
     }
 
     .wrapper h4 {
