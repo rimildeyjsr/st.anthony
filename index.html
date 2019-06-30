@@ -47,21 +47,21 @@
 
         <div class="page-one section" id="section1">
             <div id="slideshow">
-                <img src="images/Campus2.jpg" alt="school pic">
-                <img src="images/bio_lab_optimised.jpg" alt="bio lab pic">
-                <img src="images/Capture.jpg" alt="school pic">
-                <img src="images/class_optimised.jpg" alt="class pic">
-                <img src="images/LFPS_optimised.jpg" alt="school pic">
-                <img src="images/phy_lab_optimmised.jpg" alt="physics lab">
-                <img src="images/cs_lab.jpg" alt="class pic">
-                <img src="images/x-optimised.jpg" alt="school pic">
-                <img src="images/page-1-hero-image.jpg" alt="school's image">
-                <img src="images/kindergarten2.jpg" alt="kindergarten">
-                <img src="images/DSC_5518.jpg" alt="new photo">
-                <img src="images/DSC_6207.jpg" alt="new photo">
-                <img src="images/DSC_6220.jpg" alt="new photo">
-                <img src="images/DSC_6242.jpg" alt="new photo">
-                <img src="images/DSC_6311.jpg" alt="new photo">
+<!--                <img src="images/Campus2.jpg" alt="school pic">-->
+<!--                <img src="images/bio_lab_optimised.jpg" alt="bio lab pic">-->
+<!--                <img src="images/Capture.jpg" alt="school pic">-->
+<!--                <img src="images/class_optimised.jpg" alt="class pic">-->
+<!--                <img src="images/LFPS_optimised.jpg" alt="school pic">-->
+<!--                <img src="images/phy_lab_optimmised.jpg" alt="physics lab">-->
+<!--                <img src="images/cs_lab.jpg" alt="class pic">-->
+<!--                <img src="images/x-optimised.jpg" alt="school pic">-->
+<!--                <img src="images/page-1-hero-image.jpg" alt="school's image">-->
+<!--                <img src="images/kindergarten2.jpg" alt="kindergarten">-->
+<!--                <img src="images/DSC_5518.jpg" alt="new photo">-->
+<!--                <img src="images/DSC_6207.jpg" alt="new photo">-->
+<!--                <img src="images/DSC_6220.jpg" alt="new photo">-->
+<!--                <img src="images/DSC_6242.jpg" alt="new photo">-->
+<!--                <img src="images/DSC_6311.jpg" alt="new photo">-->
             </div>
 
             <div class="button_container" id="toggle">
@@ -382,6 +382,8 @@
         <script src="js/jquery-3.0.0.min.js"></script>
         <script src="jquery-ui-1.11.4/jquery-ui.min.js"></script>
         <script src="js/jquery.fullPage.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
         <script src="js/modernizr-custom.js"></script>
         <script src="js/dynamics.min.js"></script>
         <script src="js/classie.js"></script>
@@ -399,6 +401,38 @@
             });
     </script>
         <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyCZySZxPITGy8CzxywIxXGIh7MP8GL5E8c",
+                authDomain: "admin-dashboard-ceacb.firebaseapp.com",
+                databaseURL: "https://admin-dashboard-ceacb.firebaseio.com",
+                projectId: "admin-dashboard-ceacb",
+                storageBucket: "admin-dashboard-ceacb.appspot.com",
+                messagingSenderId: "34050641425",
+                appId: "1:34050641425:web:38b650461527084e"
+            };
+
+            if (!firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+            }
+
+            function loadData() {
+                var self = this;
+                var db = firebase.firestore();
+                var query = db.collection('gallery')
+                    .orderBy('timestamp', 'asc');
+                var slideshowDiv = document.getElementById('slideshow');
+                query.onSnapshot(function(querySnapshot) {
+                    querySnapshot.docChanges().forEach(function(change) {
+                        var dataRef = change.doc.data().downloadURL;
+                        var source = change.doc.metadata.hasPendingWrites ? 'Local' : 'Server';
+                        if (source === 'Server') {
+                            var img = document.createElement("img");
+                            img.src = dataRef;
+                            slideshowDiv.appendChild(img);
+                        }
+                    });
+                });
+            }
 
             function initMap() {
                 var school = {lat: 23.3435, lng: 85.3148};
@@ -411,6 +445,7 @@
                     map: map
                 });
             }
+
             //loops through images and applies kenburns effect
             function slideEffect(id){
                 //apply fx class to first element
@@ -419,19 +454,19 @@
                 window.setInterval(kenBurns, 15000);
                 //gets all images under slideshow
                 var images = document.getElementById(id).getElementsByTagName('img'),
-                        numberOfImages  = images.length,
-                        i= 1;
+                numberOfImages  = images.length,
+                i= 1;
 
                 function kenBurns() {
                     //applies class fx appropriately
-                    if(i==numberOfImages){ i = 0;}
+                    if(i === numberOfImages){ i = 0;}
                     images[i].className = "fx";
                     if(i===0){ images[numberOfImages-2].className = "";}
                     if(i===1){ images[numberOfImages-1].className = "";}
                     if(i>1){ images[i-2].className = "";}
                     i++;
                 }
-            };
+            }
 
 
             //variable for animation ends for all vendors required for callback function
@@ -459,10 +494,21 @@
                     $('#overlay').toggleClass('open');
                     $('#fp-nav').toggle();
                 });
+
+                loadData();
+
                 $('#fullpage').fullpage({
                     //names for the anchors of the pages
-                    anchors:['welcome','home','administration_page','faculty_section','staff_section','founder_section','memory_section',
-                    'contact_section'],
+                    anchors: [
+                        'welcome',
+                        'home',
+                        'administration_page',
+                        'faculty_section',
+                        'staff_section',
+                        'founder_section',
+                        'memory_section',
+                        'contact_section'
+                    ],
                     navigation: true,
                     navigationPosition: 'right',
                     fixedElements: '#toggle,#overlay',
@@ -480,7 +526,6 @@
                             $('#section5').show();
                             $('#section6').show();
                             $('#section7').show();
-
                             $('#toggle').hide();
 
                         }
@@ -491,7 +536,7 @@
                                 $('.school-logo2').fadeIn();
                             }
                             $('.school-name').addClass('come-in');
-                                slideEffect('slideshow');
+                            slideEffect('slideshow');
 
                             $.fn.fullpage.setAllowScrolling(false,'up');
                             $.fn.fullpage.setKeyboardScrolling(false, 'up');
